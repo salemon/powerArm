@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target powerarm_state[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:122:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kjoint_values[m[K’
+  122 |         start_state->getJointPositions
+      |                                       [01;31m[K^[m[K
+      |                                       [32m[K;[m[K
+  123 | 
+  124 |         [32m[Kjoint_values[m[K[0] = 20 / 180.0 * 3.1415926;
+      |         [32m[K~~~~~~~~~~~~[m[K                   
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:122:22:[m[K [01;31m[Kerror: [m[Kstatement cannot resolve address of overloaded function
+  122 |         [01;31m[Kstart_state->getJointPositions[m[K
+      |         [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:135:37:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kmoveit::core::RobotStatePtr start_state[m[K’
+  135 |         moveit::core::RobotStatePtr [01;31m[Kstart_state[m[K = move_group.getCurrentState();
+      |                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:120:37:[m[K [01;36m[Knote: [m[K‘[01m[Kmoveit::core::RobotStatePtr start_state[m[K’ previously declared here
+  120 |         moveit::core::RobotStatePtr [01;36m[Kstart_state[m[K = move_group.getCurrentState();
+      |                                     [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/powerarm_state.dir/build.make:76: CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_state.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

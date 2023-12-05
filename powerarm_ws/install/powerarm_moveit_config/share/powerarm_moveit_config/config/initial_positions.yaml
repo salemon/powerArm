@@ -1,0 +1,7 @@
+# Default initial positions for powerarm_urdf's ros2_control fake system
+
+initial_positions:
+  elbow_joint: 0
+  shoulder_joint_1: 0
+  shoulder_joint_2: 0
+  shoulder_joint_3: 0

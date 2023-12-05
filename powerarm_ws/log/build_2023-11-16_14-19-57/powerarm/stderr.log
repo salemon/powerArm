@@ -1,0 +1,10 @@
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:25:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kkdl_kinematics_plugin[m[K’ was not declared in this scope
+   25 |         node->declare_parameter("kinematics_solver", [01;31m[Kkdl_kinematics_plugin[m[K/KDLKinematicsPlugin);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:25:76:[m[K [01;31m[Kerror: [m[K‘[01m[KKDLKinematicsPlugin[m[K’ was not declared in this scope
+   25 |         node->declare_parameter("kinematics_solver", kdl_kinematics_plugin/[01;31m[KKDLKinematicsPlugin[m[K);
+      |                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/powerarm_state.dir/build.make:76: CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_state.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

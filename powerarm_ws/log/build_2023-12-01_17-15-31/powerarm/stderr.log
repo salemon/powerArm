@@ -1,0 +1,10 @@
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:79:25:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::MatrixXd jacobian_reduced[m[K’
+   79 |         Eigen::MatrixXd [01;31m[Kjacobian_reduced[m[K = jacobian(Eigen::all, idx);
+      |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:76:25:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::MatrixXd jacobian_reduced[m[K’ previously declared here
+   76 |         Eigen::MatrixXd [01;36m[Kjacobian_reduced[m[K;
+      |                         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/powerarm_control_IK.dir/build.make:76: CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_control_IK.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

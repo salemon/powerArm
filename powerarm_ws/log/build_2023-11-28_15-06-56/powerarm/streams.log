@@ -1,0 +1,26 @@
+[0.077s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[0.113s] [35m[1mConsolidate compiler generated dependencies of target powerarm_control_joint_space[0m
+[0.134s] [ 50%] [32mBuilding CXX object CMakeFiles/powerarm_control_joint_space.dir/src/powerarm_control_joint_space.cpp.o[0m
+[8.826s] [100%] [32m[1mLinking CXX executable powerarm_control_joint_space[0m
+[9.116s] [100%] Built target powerarm_control_joint_space
+[9.125s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[9.145s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm
+[9.150s] -- Install configuration: "Release"
+[9.150s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_control_joint_space
+[9.151s] -- Set runtime path of "/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_control_joint_space" to ""
+[9.151s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm
+[9.151s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm
+[9.151s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.sh
+[9.151s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.dsv
+[9.151s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.sh
+[9.151s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.dsv
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.bash
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.sh
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.zsh
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.dsv
+[9.152s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/packages/powerarm
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig.cmake
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig-version.cmake
+[9.152s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.xml
+[9.153s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm

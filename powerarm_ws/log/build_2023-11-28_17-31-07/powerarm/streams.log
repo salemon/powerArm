@@ -1,0 +1,69 @@
+[0.132s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[0.157s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.292s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.302s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.331s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.333s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.339s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.352s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.368s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.405s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.413s] -- Found parameter_traits: 0.3.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.468s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.470s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.580s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.732s] -- Found rclcpp_lifecycle: 16.0.7 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.776s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.808s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.973s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.549s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.202s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.498s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[4.018s] -- Found moveit_visual_tools: 4.1.0 (/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake)
+[4.464s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[4.465s] -- Found OGRE
+[4.466s] --   static     : OFF
+[4.466s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[4.466s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.466s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[4.466s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[4.466s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[4.466s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.466s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[4.466s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.466s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.466s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.466s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.505s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[4.505s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[5.418s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.465s] Error parsing '/home/wenda/powerarm_ws/src/powerarm/package.xml':
+[5.507s] Traceback (most recent call last):
+[5.507s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[5.507s]     main()
+[5.507s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[5.507s]     raise e
+[5.507s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[5.507s]     package = parse_package_string(
+[5.507s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[5.513s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[5.513s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/wenda/powerarm_ws/src/powerarm/package.xml':
+[5.513s] Error(s):
+[5.513s] - The manifest of package "powerarm" (with format version 3) must not contain the following tags: run_depend
+[5.513s] - Please replace <run_depend> tags with <exec_depend> tags.
+[5.526s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[5.526s]   execute_process(/usr/bin/python3.10
+[5.526s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[5.527s]   /home/wenda/powerarm_ws/src/powerarm/package.xml
+[5.527s]   /home/wenda/powerarm_ws/build/powerarm/ament_cmake_core/package.cmake)
+[5.527s]   returned error code 1
+[5.527s] Call Stack (most recent call first):
+[5.527s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[5.527s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[5.527s]   CMakeLists.txt:42 (ament_lint_auto_find_test_dependencies)
+[5.527s] 
+[5.527s] [0m
+[5.527s] -- Configuring incomplete, errors occurred!
+[5.527s] See also "/home/wenda/powerarm_ws/build/powerarm/CMakeFiles/CMakeOutput.log".
+[5.542s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[5.543s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '2': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16

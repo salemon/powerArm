@@ -1,0 +1,59 @@
+[0.131s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[0.155s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.284s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.295s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.322s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.324s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.330s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.342s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.358s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.319s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.327s] -- Found parameter_traits: 0.3.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.378s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.379s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.505s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.657s] -- Found rclcpp_lifecycle: 16.0.7 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.702s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.733s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.901s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.455s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.081s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.389s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.885s] -- Found moveit_visual_tools: 4.1.0 (/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake)
+[4.298s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[4.299s] -- Found OGRE
+[4.299s] --   static     : OFF
+[4.300s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[4.300s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.300s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[4.300s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[4.300s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[4.300s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.300s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[4.300s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.300s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.300s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.300s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.337s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[4.337s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[5.190s] [31mCMake Error at CMakeLists.txt:13 (find_package):
+[5.190s]   By not providing "Findmoveit_robot_trajectory.cmake" in CMAKE_MODULE_PATH
+[5.190s]   this project has asked CMake to find a package configuration file provided
+[5.190s]   by "moveit_robot_trajectory", but CMake did not find one.
+[5.190s] 
+[5.190s]   Could not find a package configuration file provided by
+[5.190s]   "moveit_robot_trajectory" with any of the following names:
+[5.190s] 
+[5.190s]     moveit_robot_trajectoryConfig.cmake
+[5.190s]     moveit_robot_trajectory-config.cmake
+[5.190s] 
+[5.190s]   Add the installation prefix of "moveit_robot_trajectory" to
+[5.191s]   CMAKE_PREFIX_PATH or set "moveit_robot_trajectory_DIR" to a directory
+[5.191s]   containing one of the above files.  If "moveit_robot_trajectory" provides a
+[5.191s]   separate development package or SDK, be sure it has been installed.
+[5.191s] 
+[5.191s] [0m
+[5.191s] -- Configuring incomplete, errors occurred!
+[5.191s] See also "/home/wenda/powerarm_ws/build/powerarm/CMakeFiles/CMakeOutput.log".
+[5.202s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[5.203s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '2': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16

@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[100%] [32m[1mLinking CXX executable powerarm_state[0m
+[100%] Built target powerarm_state
+-- Install configuration: "Debug"
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state
+-- Set runtime path of "/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state" to ""
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.sh
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.sh
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.dsv
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.bash
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.sh
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.zsh
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.dsv
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/packages/powerarm
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig.cmake
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig-version.cmake
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.xml

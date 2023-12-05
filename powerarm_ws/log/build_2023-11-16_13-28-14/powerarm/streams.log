@@ -1,0 +1,57 @@
+[0.091s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[0.116s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.267s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.284s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.314s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.316s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.322s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.334s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.351s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.371s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.379s] -- Found parameter_traits: 0.3.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.432s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.434s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.546s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.706s] -- Found rclcpp_lifecycle: 16.0.6 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.752s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.788s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.965s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.546s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.172s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.458s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.958s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.034s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.035s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/wenda/powerarm_ws/src/powerarm/include>
+[4.035s] -- Configured cppcheck exclude dirs and/or files: 
+[4.035s] -- Added test 'lint_cmake' to check CMake code style
+[4.036s] -- Added test 'uncrustify' to check C / C++ code style
+[4.036s] -- Configured uncrustify additional arguments: 
+[4.036s] -- Added test 'xmllint' to check XML markup files
+[4.037s] -- Configuring done
+[4.063s] -- Generating done
+[4.066s] -- Build files have been written to: /home/wenda/powerarm_ws/build/powerarm
+[4.100s] [35m[1mConsolidate compiler generated dependencies of target powerarm_state[0m
+[4.123s] [ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[12.754s] [100%] [32m[1mLinking CXX executable powerarm_state[0m
+[13.067s] [100%] Built target powerarm_state
+[13.078s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[13.104s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm
+[13.111s] -- Install configuration: "Release"
+[13.112s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state
+[13.112s] -- Set runtime path of "/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state" to ""
+[13.112s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm
+[13.112s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm
+[13.112s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.sh
+[13.112s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.dsv
+[13.112s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.sh
+[13.113s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.dsv
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.bash
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.sh
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.zsh
+[13.113s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.dsv
+[13.113s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/packages/powerarm
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig.cmake
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig-version.cmake
+[13.113s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.xml
+[13.114s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm

@@ -1,0 +1,379 @@
+[0.000000] (-) TimerEvent: {}
+[0.000228] (moveit_visual_tools) JobQueued: {'identifier': 'moveit_visual_tools', 'dependencies': OrderedDict()}
+[0.000501] (powerarm_urdf) JobQueued: {'identifier': 'powerarm_urdf', 'dependencies': OrderedDict()}
+[0.000628] (powerarm) JobQueued: {'identifier': 'powerarm', 'dependencies': OrderedDict([('moveit_visual_tools', '/home/wenda/powerarm_ws/install/moveit_visual_tools')])}
+[0.000652] (powerarm_moveit_config) JobQueued: {'identifier': 'powerarm_moveit_config', 'dependencies': OrderedDict([('powerarm_urdf', '/home/wenda/powerarm_ws/install/powerarm_urdf')])}
+[0.000672] (moveit_visual_tools) JobStarted: {'identifier': 'moveit_visual_tools'}
+[0.080928] (powerarm_urdf) JobStarted: {'identifier': 'powerarm_urdf'}
+[0.100014] (-) TimerEvent: {}
+[0.160144] (moveit_visual_tools) JobProgress: {'identifier': 'moveit_visual_tools', 'progress': 'cmake'}
+[0.161452] (moveit_visual_tools) JobProgress: {'identifier': 'moveit_visual_tools', 'progress': 'build'}
+[0.161726] (moveit_visual_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wenda/powerarm_ws/build/moveit_visual_tools', '--', '-j16', '-l16'], 'cwd': '/home/wenda/powerarm_ws/build/moveit_visual_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/moveit_visual_tools'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.164078] (powerarm_urdf) JobProgress: {'identifier': 'powerarm_urdf', 'progress': 'cmake'}
+[0.164485] (powerarm_urdf) JobProgress: {'identifier': 'powerarm_urdf', 'progress': 'build'}
+[0.164726] (powerarm_urdf) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wenda/powerarm_ws/build/powerarm_urdf', '--', '-j16', '-l16'], 'cwd': '/home/wenda/powerarm_ws/build/powerarm_urdf', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/powerarm_urdf'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.195327] (powerarm_urdf) CommandEnded: {'returncode': 0}
+[0.200088] (-) TimerEvent: {}
+[0.210771] (powerarm_urdf) JobProgress: {'identifier': 'powerarm_urdf', 'progress': 'install'}
+[0.219307] (powerarm_urdf) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wenda/powerarm_ws/build/powerarm_urdf'], 'cwd': '/home/wenda/powerarm_ws/build/powerarm_urdf', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/powerarm_urdf'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.225471] (moveit_visual_tools) StdoutLine: {'line': b'[ 66%] Built target moveit_visual_tools\n'}
+[0.225745] (powerarm_urdf) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.225933] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/config\n'}
+[0.226086] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/config/joint_names_powerarm_urdf.yaml\n'}
+[0.226188] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes\n'}
+[0.226258] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes/shoulder_link_1.STL\n'}
+[0.226392] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes/ee_link.STL\n'}
+[0.226454] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes/shoulder_link_3.STL\n'}
+[0.226517] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes/shoulder_link_2.STL\n'}
+[0.226580] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes/elbow_link.STL\n'}
+[0.226644] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/meshes/base_link.STL\n'}
+[0.226707] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/urdf\n'}
+[0.226770] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/urdf/powerarm_urdf.csv\n'}
+[0.226833] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/urdf/powerarm_urdf.urdf\n'}
+[0.226896] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/ament_index/resource_index/package_run_dependencies/powerarm_urdf\n'}
+[0.226962] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/ament_index/resource_index/parent_prefix_path/powerarm_urdf\n'}
+[0.227026] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/environment/ament_prefix_path.sh\n'}
+[0.227090] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/environment/ament_prefix_path.dsv\n'}
+[0.227153] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/environment/path.sh\n'}
+[0.227217] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/environment/path.dsv\n'}
+[0.227279] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/local_setup.bash\n'}
+[0.227341] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/local_setup.sh\n'}
+[0.227403] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/local_setup.zsh\n'}
+[0.227465] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/local_setup.dsv\n'}
+[0.227527] (powerarm_urdf) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.dsv\n'}
+[0.227712] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/ament_index/resource_index/packages/powerarm_urdf\n'}
+[0.227831] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/cmake/powerarm_urdfConfig.cmake\n'}
+[0.227910] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/cmake/powerarm_urdfConfig-version.cmake\n'}
+[0.227987] (powerarm_urdf) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.xml\n'}
+[0.228524] (powerarm_urdf) CommandEnded: {'returncode': 0}
+[0.257404] (moveit_visual_tools) StdoutLine: {'line': b'[100%] Built target moveit_visual_tools_demo\n'}
+[0.284829] (moveit_visual_tools) CommandEnded: {'returncode': 0}
+[0.300204] (-) TimerEvent: {}
+[0.363118] (powerarm_urdf) JobEnded: {'identifier': 'powerarm_urdf', 'rc': 0}
+[0.363903] (powerarm_moveit_config) JobStarted: {'identifier': 'powerarm_moveit_config'}
+[0.400299] (-) TimerEvent: {}
+[0.441248] (moveit_visual_tools) JobProgress: {'identifier': 'moveit_visual_tools', 'progress': 'install'}
+[0.442039] (moveit_visual_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wenda/powerarm_ws/build/moveit_visual_tools'], 'cwd': '/home/wenda/powerarm_ws/build/moveit_visual_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/moveit_visual_tools'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.443537] (powerarm_moveit_config) JobProgress: {'identifier': 'powerarm_moveit_config', 'progress': 'cmake'}
+[0.443936] (powerarm_moveit_config) JobProgress: {'identifier': 'powerarm_moveit_config', 'progress': 'build'}
+[0.444192] (powerarm_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wenda/powerarm_ws/build/powerarm_moveit_config', '--', '-j16', '-l16'], 'cwd': '/home/wenda/powerarm_ws/build/powerarm_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/powerarm_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.448457] (moveit_visual_tools) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.448623] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/library_path.sh\n'}
+[0.448695] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/library_path.dsv\n'}
+[0.448785] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/lib/libmoveit_visual_tools.so\n'}
+[0.448894] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/lib/moveit_visual_tools/moveit_visual_tools_demo\n'}
+[0.449012] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/include\n'}
+[0.449119] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/include/moveit_visual_tools\n'}
+[0.449217] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/include/moveit_visual_tools/imarker_robot_state.h\n'}
+[0.449281] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h\n'}
+[0.449345] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/include/moveit_visual_tools/imarker_end_effector.h\n'}
+[0.449407] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/launch\n'}
+[0.449469] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/launch/demo.rviz\n'}
+[0.449531] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/launch/demo_rviz.launch.py\n'}
+[0.449593] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources\n'}
+[0.449707] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/rrbot.srdf\n'}
+[0.449779] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/demo.png\n'}
+[0.449851] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/rrbot.urdf\n'}
+[0.449931] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/screenshot.png\n'}
+[0.449992] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/demo_mesh.stl\n'}
+[0.450052] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/ament_index/resource_index/package_run_dependencies/moveit_visual_tools\n'}
+[0.450113] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/ament_index/resource_index/parent_prefix_path/moveit_visual_tools\n'}
+[0.450173] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/ament_prefix_path.sh\n'}
+[0.450234] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/ament_prefix_path.dsv\n'}
+[0.450295] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/path.sh\n'}
+[0.450355] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/path.dsv\n'}
+[0.450414] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.bash\n'}
+[0.450474] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.sh\n'}
+[0.450534] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.zsh\n'}
+[0.450626] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.dsv\n'}
+[0.450688] (moveit_visual_tools) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.dsv\n'}
+[0.450745] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/ament_index/resource_index/packages/moveit_visual_tools\n'}
+[0.450802] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/export_moveit_visual_toolsExport.cmake\n'}
+[0.450859] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/export_moveit_visual_toolsExport-release.cmake\n'}
+[0.450919] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.450980] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.451131] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/moveit_visual_toolsConfig.cmake\n'}
+[0.451194] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/moveit_visual_toolsConfig-version.cmake\n'}
+[0.451341] (moveit_visual_tools) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.xml\n'}
+[0.451823] (moveit_visual_tools) CommandEnded: {'returncode': 0}
+[0.500485] (-) TimerEvent: {}
+[0.518584] (powerarm_moveit_config) CommandEnded: {'returncode': 0}
+[0.533825] (powerarm_moveit_config) JobProgress: {'identifier': 'powerarm_moveit_config', 'progress': 'install'}
+[0.534053] (powerarm_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wenda/powerarm_ws/build/powerarm_moveit_config'], 'cwd': '/home/wenda/powerarm_ws/build/powerarm_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/powerarm_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.540787] (powerarm_moveit_config) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.541188] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/ament_index/resource_index/package_run_dependencies/powerarm_moveit_config\n'}
+[0.541266] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/ament_index/resource_index/parent_prefix_path/powerarm_moveit_config\n'}
+[0.541332] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/environment/ament_prefix_path.sh\n'}
+[0.541395] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/environment/ament_prefix_path.dsv\n'}
+[0.541459] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/environment/path.sh\n'}
+[0.541522] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/environment/path.dsv\n'}
+[0.541584] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/local_setup.bash\n'}
+[0.541864] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/local_setup.sh\n'}
+[0.542121] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/local_setup.zsh\n'}
+[0.542184] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/local_setup.dsv\n'}
+[0.542246] (powerarm_moveit_config) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.dsv\n'}
+[0.542328] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/ament_index/resource_index/packages/powerarm_moveit_config\n'}
+[0.542387] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/cmake/powerarm_moveit_configConfig.cmake\n'}
+[0.542445] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/cmake/powerarm_moveit_configConfig-version.cmake\n'}
+[0.542503] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.xml\n'}
+[0.542721] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch\n'}
+[0.542780] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/rsp.launch.py\n'}
+[0.542857] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/spawn_controllers.launch.py\n'}
+[0.542916] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[0.542983] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/warehouse_db.launch.py\n'}
+[0.543042] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/setup_assistant.launch.py\n'}
+[0.543100] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/moveit_rviz.launch.py\n'}
+[0.543158] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/demo.launch.py\n'}
+[0.543216] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/launch/move_group.launch.py\n'}
+[0.543275] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config\n'}
+[0.543333] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/ros2_controllers.yaml\n'}
+[0.543392] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/powerarm_urdf.urdf.xacro\n'}
+[0.543450] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/initial_positions.yaml\n'}
+[0.543508] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/powerarm_urdf.srdf\n'}
+[0.543566] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/kinematics.yaml\n'}
+[0.543625] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[0.543686] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/moveit_controllers.yaml\n'}
+[0.543747] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/joint_limits.yaml\n'}
+[0.543867] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/sensors_3d.yaml\n'}
+[0.543930] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/moveit.rviz\n'}
+[0.543990] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/config/powerarm_urdf.ros2_control.xacro\n'}
+[0.544136] (powerarm_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/.setup_assistant\n'}
+[0.600995] (-) TimerEvent: {}
+[0.621843] (moveit_visual_tools) JobEnded: {'identifier': 'moveit_visual_tools', 'rc': 0}
+[0.622718] (powerarm) JobStarted: {'identifier': 'powerarm'}
+[0.697489] (powerarm_moveit_config) CommandEnded: {'returncode': 0}
+[0.701078] (-) TimerEvent: {}
+[0.749428] (powerarm) JobProgress: {'identifier': 'powerarm', 'progress': 'cmake'}
+[0.750047] (powerarm) JobProgress: {'identifier': 'powerarm', 'progress': 'build'}
+[0.750385] (powerarm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wenda/powerarm_ws/build/powerarm', '--', '-j16', '-l16'], 'cwd': '/home/wenda/powerarm_ws/build/powerarm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/powerarm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[0.779325] (powerarm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801162] (-) TimerEvent: {}
+[0.829423] (powerarm_moveit_config) JobEnded: {'identifier': 'powerarm_moveit_config', 'rc': 0}
+[0.901285] (-) TimerEvent: {}
+[0.925591] (powerarm) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[0.941612] (powerarm) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[0.976615] (powerarm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.979644] (powerarm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.987987] (powerarm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.001402] (-) TimerEvent: {}
+[1.001697] (powerarm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.020268] (powerarm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101527] (-) TimerEvent: {}
+[1.201779] (-) TimerEvent: {}
+[1.302011] (-) TimerEvent: {}
+[1.402234] (-) TimerEvent: {}
+[1.502493] (-) TimerEvent: {}
+[1.602720] (-) TimerEvent: {}
+[1.702927] (-) TimerEvent: {}
+[1.803137] (-) TimerEvent: {}
+[1.903386] (-) TimerEvent: {}
+[2.003600] (-) TimerEvent: {}
+[2.020225] (powerarm) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.030010] (powerarm) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.6 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.088789] (powerarm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.090951] (powerarm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.103767] (-) TimerEvent: {}
+[2.204070] (-) TimerEvent: {}
+[2.205226] (powerarm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.304161] (-) TimerEvent: {}
+[2.369759] (powerarm) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.6 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.404240] (-) TimerEvent: {}
+[2.419384] (powerarm) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.457269] (powerarm) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[2.504369] (-) TimerEvent: {}
+[2.604603] (-) TimerEvent: {}
+[2.634557] (powerarm) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.704696] (-) TimerEvent: {}
+[2.804925] (-) TimerEvent: {}
+[2.905162] (-) TimerEvent: {}
+[3.005425] (-) TimerEvent: {}
+[3.105648] (-) TimerEvent: {}
+[3.205908] (-) TimerEvent: {}
+[3.223262] (powerarm) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.305998] (-) TimerEvent: {}
+[3.406254] (-) TimerEvent: {}
+[3.506477] (-) TimerEvent: {}
+[3.606710] (-) TimerEvent: {}
+[3.706936] (-) TimerEvent: {}
+[3.807196] (-) TimerEvent: {}
+[3.844568] (powerarm) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.907284] (-) TimerEvent: {}
+[4.007503] (-) TimerEvent: {}
+[4.107722] (-) TimerEvent: {}
+[4.120073] (powerarm) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[4.207810] (-) TimerEvent: {}
+[4.307982] (-) TimerEvent: {}
+[4.408200] (-) TimerEvent: {}
+[4.508432] (-) TimerEvent: {}
+[4.608655] (-) TimerEvent: {}
+[4.613962] (powerarm) StdoutLine: {'line': b'-- Found moveit_visual_tools: 4.1.0 (/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake)\n'}
+[4.708742] (-) TimerEvent: {}
+[4.808958] (-) TimerEvent: {}
+[4.909173] (-) TimerEvent: {}
+[5.009388] (-) TimerEvent: {}
+[5.059231] (powerarm) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[5.060739] (powerarm) StdoutLine: {'line': b'-- Found OGRE\n'}
+[5.060819] (powerarm) StdoutLine: {'line': b'--   static     : OFF\n'}
+[5.060914] (powerarm) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[5.060979] (powerarm) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[5.061039] (powerarm) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[5.061198] (powerarm) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[5.061274] (powerarm) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[5.061339] (powerarm) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[5.061400] (powerarm) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[5.061459] (powerarm) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[5.061546] (powerarm) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[5.061606] (powerarm) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[5.061671] (powerarm) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[5.101811] (powerarm) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[5.101954] (powerarm) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[5.109455] (-) TimerEvent: {}
+[5.209656] (-) TimerEvent: {}
+[5.309887] (-) TimerEvent: {}
+[5.410119] (-) TimerEvent: {}
+[5.510342] (-) TimerEvent: {}
+[5.610561] (-) TimerEvent: {}
+[5.710775] (-) TimerEvent: {}
+[5.811000] (-) TimerEvent: {}
+[5.911223] (-) TimerEvent: {}
+[6.011452] (-) TimerEvent: {}
+[6.036555] (powerarm) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.107292] (powerarm) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.107505] (powerarm) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/wenda/powerarm_ws/src/powerarm/include>\n'}
+[6.107612] (powerarm) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.108227] (powerarm) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.109162] (powerarm) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.109242] (powerarm) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.109585] (powerarm) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.111034] (powerarm) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.111507] (-) TimerEvent: {}
+[6.146175] (powerarm) StdoutLine: {'line': b'-- Generating done\n'}
+[6.148373] (powerarm) StdoutLine: {'line': b'-- Build files have been written to: /home/wenda/powerarm_ws/build/powerarm\n'}
+[6.183866] (powerarm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/powerarm_control_joint_space.dir/src/powerarm_control_joint_space.cpp.o\x1b[0m\n'}
+[6.211607] (-) TimerEvent: {}
+[6.311839] (-) TimerEvent: {}
+[6.412076] (-) TimerEvent: {}
+[6.512297] (-) TimerEvent: {}
+[6.612533] (-) TimerEvent: {}
+[6.712763] (-) TimerEvent: {}
+[6.813001] (-) TimerEvent: {}
+[6.913231] (-) TimerEvent: {}
+[7.013513] (-) TimerEvent: {}
+[7.113760] (-) TimerEvent: {}
+[7.214050] (-) TimerEvent: {}
+[7.314338] (-) TimerEvent: {}
+[7.414679] (-) TimerEvent: {}
+[7.515026] (-) TimerEvent: {}
+[7.615293] (-) TimerEvent: {}
+[7.715560] (-) TimerEvent: {}
+[7.815823] (-) TimerEvent: {}
+[7.916085] (-) TimerEvent: {}
+[8.016305] (-) TimerEvent: {}
+[8.116545] (-) TimerEvent: {}
+[8.216794] (-) TimerEvent: {}
+[8.317057] (-) TimerEvent: {}
+[8.417295] (-) TimerEvent: {}
+[8.517535] (-) TimerEvent: {}
+[8.617768] (-) TimerEvent: {}
+[8.718007] (-) TimerEvent: {}
+[8.818277] (-) TimerEvent: {}
+[8.918555] (-) TimerEvent: {}
+[9.018799] (-) TimerEvent: {}
+[9.119083] (-) TimerEvent: {}
+[9.219315] (-) TimerEvent: {}
+[9.319532] (-) TimerEvent: {}
+[9.419760] (-) TimerEvent: {}
+[9.520002] (-) TimerEvent: {}
+[9.620248] (-) TimerEvent: {}
+[9.720491] (-) TimerEvent: {}
+[9.820725] (-) TimerEvent: {}
+[9.920967] (-) TimerEvent: {}
+[10.021246] (-) TimerEvent: {}
+[10.121514] (-) TimerEvent: {}
+[10.221733] (-) TimerEvent: {}
+[10.321978] (-) TimerEvent: {}
+[10.422232] (-) TimerEvent: {}
+[10.522466] (-) TimerEvent: {}
+[10.622710] (-) TimerEvent: {}
+[10.722956] (-) TimerEvent: {}
+[10.823240] (-) TimerEvent: {}
+[10.923505] (-) TimerEvent: {}
+[11.023735] (-) TimerEvent: {}
+[11.123968] (-) TimerEvent: {}
+[11.224220] (-) TimerEvent: {}
+[11.324529] (-) TimerEvent: {}
+[11.424762] (-) TimerEvent: {}
+[11.524985] (-) TimerEvent: {}
+[11.625245] (-) TimerEvent: {}
+[11.725501] (-) TimerEvent: {}
+[11.825725] (-) TimerEvent: {}
+[11.925956] (-) TimerEvent: {}
+[12.026218] (-) TimerEvent: {}
+[12.126519] (-) TimerEvent: {}
+[12.226747] (-) TimerEvent: {}
+[12.327023] (-) TimerEvent: {}
+[12.427304] (-) TimerEvent: {}
+[12.527547] (-) TimerEvent: {}
+[12.627794] (-) TimerEvent: {}
+[12.728051] (-) TimerEvent: {}
+[12.828303] (-) TimerEvent: {}
+[12.928546] (-) TimerEvent: {}
+[13.028781] (-) TimerEvent: {}
+[13.129009] (-) TimerEvent: {}
+[13.229235] (-) TimerEvent: {}
+[13.329463] (-) TimerEvent: {}
+[13.429691] (-) TimerEvent: {}
+[13.529951] (-) TimerEvent: {}
+[13.630191] (-) TimerEvent: {}
+[13.730461] (-) TimerEvent: {}
+[13.830688] (-) TimerEvent: {}
+[13.930953] (-) TimerEvent: {}
+[14.031223] (-) TimerEvent: {}
+[14.131493] (-) TimerEvent: {}
+[14.231770] (-) TimerEvent: {}
+[14.332054] (-) TimerEvent: {}
+[14.432325] (-) TimerEvent: {}
+[14.532561] (-) TimerEvent: {}
+[14.632782] (-) TimerEvent: {}
+[14.733034] (-) TimerEvent: {}
+[14.833286] (-) TimerEvent: {}
+[14.933535] (-) TimerEvent: {}
+[15.033819] (-) TimerEvent: {}
+[15.134114] (-) TimerEvent: {}
+[15.234386] (-) TimerEvent: {}
+[15.334650] (-) TimerEvent: {}
+[15.434907] (-) TimerEvent: {}
+[15.535169] (-) TimerEvent: {}
+[15.635427] (-) TimerEvent: {}
+[15.735666] (-) TimerEvent: {}
+[15.736801] (powerarm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable powerarm_control_joint_space\x1b[0m\n'}
+[15.835784] (-) TimerEvent: {}
+[15.936051] (-) TimerEvent: {}
+[16.036321] (-) TimerEvent: {}
+[16.051758] (powerarm) StdoutLine: {'line': b'[100%] Built target powerarm_control_joint_space\n'}
+[16.061815] (powerarm) CommandEnded: {'returncode': 0}
+[16.080922] (powerarm) JobProgress: {'identifier': 'powerarm', 'progress': 'install'}
+[16.081378] (powerarm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wenda/powerarm_ws/build/powerarm'], 'cwd': '/home/wenda/powerarm_ws/build/powerarm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wenda'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wenda'), ('OLDPWD', '/home/wenda'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wenda/powerarm_ws/install:/home/wenda/test_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wenda'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wenda'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wenda-ThinkPad-P15-Gen-1:@/tmp/.ICE-unix/1438,unix/wenda-ThinkPad-P15-Gen-1:/tmp/.ICE-unix/1438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/59df28dd_b38d_4e5c_8a4c_d3dc5c5fe662'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EL31E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wenda/powerarm_ws/build/powerarm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble')]), 'shell': False}
+[16.088140] (powerarm) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[16.088402] (powerarm) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_control_joint_space\n'}
+[16.088848] (powerarm) StdoutLine: {'line': b'-- Set runtime path of "/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_control_joint_space" to ""\n'}
+[16.089141] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm\n'}
+[16.089273] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm\n'}
+[16.089354] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.sh\n'}
+[16.089572] (powerarm) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.dsv\n'}
+[16.089652] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.sh\n'}
+[16.089827] (powerarm) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.dsv\n'}
+[16.089907] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.bash\n'}
+[16.089971] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.sh\n'}
+[16.090031] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.zsh\n'}
+[16.090089] (powerarm) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.dsv\n'}
+[16.090146] (powerarm) StdoutLine: {'line': b'-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv\n'}
+[16.090204] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/packages/powerarm\n'}
+[16.090275] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig.cmake\n'}
+[16.090341] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig-version.cmake\n'}
+[16.090399] (powerarm) StdoutLine: {'line': b'-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.xml\n'}
+[16.091418] (powerarm) CommandEnded: {'returncode': 0}
+[16.136910] (-) TimerEvent: {}
+[16.237143] (-) TimerEvent: {}
+[16.243840] (powerarm) JobEnded: {'identifier': 'powerarm', 'rc': 0}
+[16.244434] (-) EventReactorShutdown: {}

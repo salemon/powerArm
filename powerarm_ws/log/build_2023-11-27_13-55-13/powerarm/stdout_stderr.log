@@ -1,0 +1,50 @@
+[35m[1mConsolidate compiler generated dependencies of target powerarm_state[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:102:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  102 |         printf("[01;35m[K%d[m[K %d %d\n",  [32m[Kmy_plan.start_state_.joint_state.name.size()[m[K,  my_plan.start_state_.joint_state.position.size(),  my_plan.start_state_.joint_state.velocity.size());
+      |                 [01;35m[K~^[m[K            [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                  [01;35m[K|[m[K                                                      [32m[K|[m[K
+      |                  [01;35m[Kint[m[K                                                    [32m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type {aka long unsigned int}[m[K
+      |                 [32m[K%ld[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:102:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  102 |         printf("%d [01;35m[K%d[m[K %d\n",  my_plan.start_state_.joint_state.name.size(),  [32m[Kmy_plan.start_state_.joint_state.position.size()[m[K,  my_plan.start_state_.joint_state.velocity.size());
+      |                    [01;35m[K~^[m[K                                                        [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [01;35m[K|[m[K                                                                                                      [32m[K|[m[K
+      |                     [01;35m[Kint[m[K                                                                                                    [32m[Kstd::vector<double, std::allocator<double> >::size_type {aka long unsigned int}[m[K
+      |                    [32m[K%ld[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:102:24:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 4 has type ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  102 |         printf("%d %d [01;35m[K%d[m[K\n",  my_plan.start_state_.joint_state.name.size(),  my_plan.start_state_.joint_state.position.size(),  [32m[Kmy_plan.start_state_.joint_state.velocity.size()[m[K);
+      |                       [01;35m[K~^[m[K                                                                                                        [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [01;35m[K|[m[K                                                                                                                                                      [32m[K|[m[K
+      |                        [01;35m[Kint[m[K                                                                                                                                                    [32m[Kstd::vector<double, std::allocator<double> >::size_type {aka long unsigned int}[m[K
+      |                       [32m[K%ld[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:104:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  104 |         for(int i = 0; [01;35m[Ki < my_plan.start_state_.joint_state.name.size()[m[K; i++) {
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:107:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  107 |         for(int i = 0; [01;35m[Ki <  my_plan.trajectory_.joint_trajectory.points.size()[m[K; i++) {
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:108:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  108 |                 for(int j = 0; [01;35m[Kj <  my_plan.trajectory_.joint_trajectory.points[i].positions.size()[m[K; j++) {
+      |                                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable powerarm_state[0m
+[100%] Built target powerarm_state
+-- Install configuration: "Release"
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state
+-- Set runtime path of "/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state" to ""
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.sh
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.dsv
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.bash
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.sh
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.zsh
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.dsv
+-- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/packages/powerarm
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig.cmake
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig-version.cmake
+-- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.xml

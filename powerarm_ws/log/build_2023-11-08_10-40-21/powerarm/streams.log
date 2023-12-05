@@ -1,0 +1,43 @@
+[0.057s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm
+[0.066s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.210s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.371s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.421s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.427s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.438s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.455s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.480s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.572s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.588s] -- Found parameter_traits: 0.3.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.664s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.667s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.764s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.789s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.832s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.844s] -- Found Threads: TRUE  
+[2.019s] -- Found rclcpp_lifecycle: 16.0.6 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.075s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.172s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.398s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.398s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.080s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.739s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[4.052s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[4.582s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.651s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.651s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/wenda/powerarm_ws/src/powerarm/include>
+[4.651s] -- Configured cppcheck exclude dirs and/or files: 
+[4.652s] -- Added test 'lint_cmake' to check CMake code style
+[4.652s] -- Added test 'uncrustify' to check C / C++ code style
+[4.652s] -- Configured uncrustify additional arguments: 
+[4.653s] -- Added test 'xmllint' to check XML markup files
+[4.654s] -- Configuring done
+[4.681s] -- Generating done
+[4.684s] -- Build files have been written to: /home/wenda/powerarm_ws/build/powerarm
+[4.696s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm
+[4.697s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[4.742s] [ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[10.016s] gmake[2]: *** [CMakeFiles/powerarm_state.dir/build.make:76: CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o] Interrupt
+[10.016s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_state.dir/all] Interrupt
+[10.016s] gmake: *** [Makefile:146: all] Interrupt
+[10.044s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16

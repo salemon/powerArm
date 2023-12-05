@@ -1,0 +1,14 @@
+[0.133s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_robot:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[0.179s] [35m[1mConsolidate compiler generated dependencies of target powerarm_control_IK[0m
+[0.199s] [ 50%] [32mBuilding CXX object CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o[0m
+[5.217s] [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.217s] [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:79:25:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::MatrixXd jacobian_reduced[m[K’
+[5.217s]    79 |         Eigen::MatrixXd [01;31m[Kjacobian_reduced[m[K = jacobian(Eigen::all, idx);
+[5.217s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.217s] [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:76:25:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::MatrixXd jacobian_reduced[m[K’ previously declared here
+[5.218s]    76 |         Eigen::MatrixXd [01;36m[Kjacobian_reduced[m[K;
+[5.218s]       |                         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[11.078s] gmake[2]: *** [CMakeFiles/powerarm_control_IK.dir/build.make:76: CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o] Error 1
+[11.079s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_control_IK.dir/all] Error 2
+[11.079s] gmake: *** [Makefile:146: all] Error 2
+[11.081s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '2': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_robot:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16

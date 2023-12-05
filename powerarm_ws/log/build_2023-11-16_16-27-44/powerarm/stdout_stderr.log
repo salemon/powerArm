@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target powerarm_state[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group[m[K’ was not declared in this scope
+   35 |         [01;31m[Kmove_group[m[K.getCurrentState()->getJointModelGroup("powerarm");
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisual_tools[m[K’ was not declared in this scope; did you mean ‘[01m[Krviz_visual_tools[m[K’?
+   98 |         [01;31m[Kvisual_tools[m[K.publishTrajectoryLine(my_plan[i].trajectory_, joint_model_group);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[Krviz_visual_tools[m[K
+gmake[2]: *** [CMakeFiles/powerarm_state.dir/build.make:76: CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_state.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

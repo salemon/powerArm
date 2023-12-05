@@ -1,0 +1,164 @@
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:93:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<moveit::planning_interface::MoveGroupInterface>[m[K’ has no member named ‘[01m[KsetPoseTarget[m[K’
+   93 |         move_group_interface.[01;31m[KsetPoseTarget[m[K(target_pose[i]);
+      |                              [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:94:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<moveit::planning_interface::MoveGroupInterface>[m[K’ has no member named ‘[01m[Kplan[m[K’
+   94 |         move_group_interface.[01;31m[Kplan[m[K(my_plan[i]);
+      |                              [01;31m[K^~~~[m[K
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:95:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<moveit::planning_interface::MoveGroupInterface>[m[K’ has no member named ‘[01m[Kexecute[m[K’
+   95 |         move_group_interface.[01;31m[Kexecute[m[K(my_plan[i]);
+      |                              [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:4[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Krclcpp::Parameter::Parameter(const string&, ValueTypeT) [with ValueTypeT = YAML::Node; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:61:79:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:70:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::ParameterValue::ParameterValue(YAML::Node&)[m[K’
+   70 |   : Parameter(name, [01;31m[KParameterValue(value)[m[K)
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:121:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’
+  121 |   explicit [01;36m[KParameterValue[m[K(const std::vector<std::string> & string_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:121:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<std::__cxx11::basic_string<char> >&[m[K’
+  121 |   explicit ParameterValue([01;36m[Kconst std::vector<std::string> & string_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:118:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<double, std::allocator<double> >&)[m[K’
+  118 |   explicit [01;36m[KParameterValue[m[K(const std::vector<double> & double_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:118:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<double, std::allocator<double> >&[m[K’
+  118 |   explicit ParameterValue([01;36m[Kconst std::vector<double> & double_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:115:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<float>&)[m[K’
+  115 |   explicit [01;36m[KParameterValue[m[K(const std::vector<float> & double_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:115:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<float>&[m[K’
+  115 |   explicit ParameterValue([01;36m[Kconst std::vector<float> & double_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:112:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<long int, std::allocator<long int> >&)[m[K’
+  112 |   explicit [01;36m[KParameterValue[m[K(const std::vector<int64_t> & int_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:112:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<long int, std::allocator<long int> >&[m[K’
+  112 |   explicit ParameterValue([01;36m[Kconst std::vector<int64_t> & int_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:109:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<int>&)[m[K’
+  109 |   explicit [01;36m[KParameterValue[m[K(const std::vector<int> & int_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:109:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+  109 |   explicit ParameterValue([01;36m[Kconst std::vector<int> & int_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:106:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<bool, std::allocator<bool> >&)[m[K’
+  106 |   explicit [01;36m[KParameterValue[m[K(const std::vector<bool> & bool_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:106:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<bool, std::allocator<bool> >&[m[K’
+  106 |   explicit ParameterValue([01;36m[Kconst std::vector<bool> & bool_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’
+  103 |   explicit [01;36m[KParameterValue[m[K(const std::vector<uint8_t> & byte_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:103:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >&[m[K’
+  103 |   explicit ParameterValue([01;36m[Kconst std::vector<uint8_t> & byte_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:100:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const char*)[m[K’
+  100 |   explicit [01;36m[KParameterValue[m[K(const char * string_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:100:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst char*[m[K’
+  100 |   explicit ParameterValue([01;36m[Kconst char * string_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:97:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const string&)[m[K’
+   97 |   explicit [01;36m[KParameterValue[m[K(const std::string & string_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:97:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   97 |   explicit ParameterValue([01;36m[Kconst std::string & string_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:94:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(double)[m[K’
+   94 |   explicit [01;36m[KParameterValue[m[K(const double double_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:94:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kdouble[m[K’
+   94 |   explicit ParameterValue([01;36m[Kconst double double_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(float)[m[K’
+   91 |   explicit [01;36m[KParameterValue[m[K(const float double_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:91:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kfloat[m[K’
+   91 |   explicit ParameterValue([01;36m[Kconst float double_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:88:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(int64_t)[m[K’
+   88 |   explicit [01;36m[KParameterValue[m[K(const int64_t int_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:88:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kint64_t[m[K’ {aka ‘[01m[Klong int[m[K’}
+   88 |   explicit ParameterValue([01;36m[Kconst int64_t int_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:85:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(int)[m[K’
+   85 |   explicit [01;36m[KParameterValue[m[K(const int int_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:85:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kint[m[K’
+   85 |   explicit ParameterValue([01;36m[Kconst int int_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:82:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(bool)[m[K’
+   82 |   explicit [01;36m[KParameterValue[m[K(const bool bool_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:82:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kbool[m[K’
+   82 |   explicit ParameterValue([01;36m[Kconst bool bool_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:79:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const ParameterValue&)[m[K’
+   79 |   explicit [01;36m[KParameterValue[m[K(const rcl_interfaces::msg::ParameterValue & value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:79:71:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst ParameterValue&[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterValue_<std::allocator<void> >&[m[K’}
+   79 |   explicit ParameterValue([01;36m[Kconst rcl_interfaces::msg::ParameterValue & value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:76:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue()[m[K’
+   76 |   [01;36m[KParameterValue[m[K();
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:76:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const rclcpp::ParameterValue&)[m[K’
+   71 | class [01;36m[KParameterValue[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(rclcpp::ParameterValue&&)[m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYAML::Node[m[K’ to ‘[01m[Krclcpp::ParameterValue&&[m[K’
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}; _Tp = moveit::planning_interface::MoveGroupInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<moveit::planning_interface::MoveGroupInterface>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}; _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}; _Tp = moveit::planning_interface::MoveGroupInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}; _Tp = moveit::planning_interface::MoveGroupInterface][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Alloc = std::allocator<moveit::planning_interface::MoveGroupInterface>; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = moveit::planning_interface::MoveGroupInterface; _Args = {const char (&)[9], const std::shared_ptr<rclcpp::Node>&}][m[K’
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:64:69:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [9], const std::shared_ptr<rclcpp::Node>&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+  159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+  145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [9][m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+  145 |   MoveGroupInterface([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K, const std::string& group,
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+  134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [9][m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+  134 |   MoveGroupInterface([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K, const Options& opt,
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/powerarm_state.dir/build.make:76: CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_state.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

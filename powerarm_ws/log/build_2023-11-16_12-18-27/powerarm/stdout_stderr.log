@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:23:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::Options::Options(const char [9], const char [18], const std::shared_ptr<rclcpp::Node>&)[m[K’
+   23 |     auto options = MoveGroupInterface::Options("powerarm", "robot_description", node[01;31m[K)[m[K;
+      |                                                                                     [01;31m[K^[m[K
+In file included from [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:89:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::Options::Options(std::string, std::string, std::string)[m[K’
+   89 |     [01;36m[KOptions[m[K(std::string group_name, std::string desc = ROBOT_DESCRIPTION, std::string move_group_namespace = "")
+      |     [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:89:87:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst std::shared_ptr<rclcpp::Node>[m[K’ to ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’}
+   89 |     Options(std::string group_name, std::string desc = ROBOT_DESCRIPTION, [01;36m[Kstd::string move_group_namespace = ""[m[K)
+      |                                                                           [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:87:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::Options::Options(const moveit::planning_interface::MoveGroupInterface::Options&)[m[K’
+   87 |   struct [01;36m[KOptions[m[K
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:87:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:87:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::Options::Options(moveit::planning_interface::MoveGroupInterface::Options&&)[m[K’
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:87:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+gmake[2]: *** [CMakeFiles/powerarm_state.dir/build.make:76: CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_state.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

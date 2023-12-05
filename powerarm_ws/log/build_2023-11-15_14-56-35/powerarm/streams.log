@@ -1,0 +1,29 @@
+[0.084s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[0.158s] [ 50%] [32mBuilding CXX object CMakeFiles/powerarm_state.dir/src/powerarm_state.cpp.o[0m
+[5.450s] [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.450s] [01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:19:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktarget_pose[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.450s]    19 |   auto const [01;35m[Ktarget_pose[m[K = []{
+[5.450s]       |              [01;35m[K^~~~~~~~~~~[m[K
+[9.730s] [100%] [32m[1mLinking CXX executable powerarm_state[0m
+[10.165s] [100%] Built target powerarm_state
+[10.174s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[10.196s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm
+[10.202s] -- Install configuration: "Debug"
+[10.202s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state
+[10.209s] -- Set runtime path of "/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_state" to ""
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.sh
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/ament_prefix_path.dsv
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.sh
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/environment/path.dsv
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.bash
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.sh
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.zsh
+[10.209s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/local_setup.dsv
+[10.210s] -- Installing: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv
+[10.210s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/packages/powerarm
+[10.210s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig.cmake
+[10.210s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/cmake/powerarmConfig-version.cmake
+[10.210s] -- Up-to-date: /home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.xml
+[10.211s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm

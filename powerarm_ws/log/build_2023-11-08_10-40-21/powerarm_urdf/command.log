@@ -1,0 +1,6 @@
+Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm_urdf -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm_urdf
+Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm_urdf -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm_urdf
+Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_urdf -- -j16 -l16
+Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_urdf -- -j16 -l16
+Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm_urdf
+Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm_urdf

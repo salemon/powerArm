@@ -1,0 +1,9 @@
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/uninstall.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/powerarm_urdf_uninstall.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/test.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/edit_cache.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/rebuild_cache.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/list_install_components.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/install.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/install/local.dir
+/home/wenda/powerarm_ws/build/powerarm_urdf/CMakeFiles/install/strip.dir

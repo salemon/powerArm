@@ -1,0 +1,346 @@
+[1.311s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.311s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ff124283fd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff1242b3f70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff1242b3f70>>, mixin_verb=('build',))
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.360s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wenda/powerarm_ws'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extension 'ignore'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extension 'ignore_ament_install'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extensions ['colcon_pkg']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extension 'colcon_pkg'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extensions ['colcon_meta']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extension 'colcon_meta'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extensions ['ros']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_visual_tools-ros2) by extension 'ros'
+[1.378s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_visual_tools-ros2' with type 'ros.ament_cmake' and name 'moveit_visual_tools'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extensions ['ignore', 'ignore_ament_install']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extension 'ignore'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extension 'ignore_ament_install'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extensions ['colcon_pkg']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extension 'colcon_pkg'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extensions ['colcon_meta']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extension 'colcon_meta'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extensions ['ros']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm) by extension 'ros'
+[1.380s] DEBUG:colcon.colcon_core.package_identification:Package 'src/powerarm' with type 'ros.ament_cmake' and name 'powerarm'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extension 'ignore'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extension 'ignore_ament_install'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extensions ['colcon_pkg']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extension 'colcon_pkg'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extensions ['colcon_meta']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extension 'colcon_meta'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extensions ['ros']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_moveit_config) by extension 'ros'
+[1.381s] DEBUG:colcon.colcon_core.package_identification:Package 'src/powerarm_moveit_config' with type 'ros.ament_cmake' and name 'powerarm_moveit_config'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extensions ['ignore', 'ignore_ament_install']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extension 'ignore'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extension 'ignore_ament_install'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extensions ['colcon_pkg']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extension 'colcon_pkg'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extensions ['colcon_meta']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extension 'colcon_meta'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extensions ['ros']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/powerarm_urdf) by extension 'ros'
+[1.382s] DEBUG:colcon.colcon_core.package_identification:Package 'src/powerarm_urdf' with type 'ros.ament_cmake' and name 'powerarm_urdf'
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.506s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/wenda/powerarm_ws/install
+[1.521s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/wenda/test_ws/install
+[1.537s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 333 installed packages in /opt/ros/humble
+[1.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_args' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_target' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_clean_first' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'cmake_force_configure' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'ament_cmake_args' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'moveit_visual_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.652s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_visual_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wenda/powerarm_ws/build/moveit_visual_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wenda/powerarm_ws/install/moveit_visual_tools', 'merge_install': False, 'path': '/home/wenda/powerarm_ws/src/moveit_visual_tools-ros2', 'symlink_install': False, 'test_result_base': None}
+[1.668s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'cmake_args' from command line to 'None'
+[1.668s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'cmake_target' from command line to 'None'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'cmake_clean_cache' from command line to 'False'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'cmake_clean_first' from command line to 'False'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'cmake_force_configure' from command line to 'False'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'ament_cmake_args' from command line to 'None'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'catkin_cmake_args' from command line to 'None'
+[1.669s] Level 5:colcon.colcon_core.verb:set package 'powerarm_urdf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.669s] DEBUG:colcon.colcon_core.verb:Building package 'powerarm_urdf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wenda/powerarm_ws/build/powerarm_urdf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wenda/powerarm_ws/install/powerarm_urdf', 'merge_install': False, 'path': '/home/wenda/powerarm_ws/src/powerarm_urdf', 'symlink_install': False, 'test_result_base': None}
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'cmake_args' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'cmake_target' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'cmake_clean_first' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'cmake_force_configure' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'ament_cmake_args' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.684s] Level 5:colcon.colcon_core.verb:set package 'powerarm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.684s] DEBUG:colcon.colcon_core.verb:Building package 'powerarm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wenda/powerarm_ws/build/powerarm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wenda/powerarm_ws/install/powerarm', 'merge_install': False, 'path': '/home/wenda/powerarm_ws/src/powerarm', 'symlink_install': False, 'test_result_base': None}
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'powerarm_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.699s] DEBUG:colcon.colcon_core.verb:Building package 'powerarm_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wenda/powerarm_ws/build/powerarm_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wenda/powerarm_ws/install/powerarm_moveit_config', 'merge_install': False, 'path': '/home/wenda/powerarm_ws/src/powerarm_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.714s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.730s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.730s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wenda/powerarm_ws/src/moveit_visual_tools-ros2' with build type 'ament_cmake'
+[1.730s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wenda/powerarm_ws/src/moveit_visual_tools-ros2'
+[1.746s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.746s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.809s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wenda/powerarm_ws/src/powerarm_urdf' with build type 'ament_cmake'
+[1.810s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wenda/powerarm_ws/src/powerarm_urdf'
+[1.826s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.826s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/moveit_visual_tools-ros2 -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/moveit_visual_tools
+[1.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm_urdf -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm_urdf
+[2.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm_urdf -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm_urdf
+[2.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_urdf -- -j16 -l16
+[2.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_urdf -- -j16 -l16
+[2.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm_urdf
+[2.195s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(powerarm_urdf)
+[2.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm_urdf
+[2.213s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf' for CMake module files
+[2.214s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf' for CMake config files
+[2.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('powerarm_urdf', 'cmake_prefix_path')
+[2.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/hook/cmake_prefix_path.ps1'
+[2.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/hook/cmake_prefix_path.dsv'
+[2.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/hook/cmake_prefix_path.sh'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/bin'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/lib/pkgconfig/powerarm_urdf.pc'
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/lib/python3.10/site-packages'
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/bin'
+[2.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.ps1'
+[2.249s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.dsv'
+[2.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.sh'
+[2.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.bash'
+[2.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.zsh'
+[2.251s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/powerarm_urdf/share/colcon-core/packages/powerarm_urdf)
+[2.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(powerarm_urdf)
+[2.307s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf' for CMake module files
+[2.307s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf' for CMake config files
+[2.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('powerarm_urdf', 'cmake_prefix_path')
+[2.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/hook/cmake_prefix_path.ps1'
+[2.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/hook/cmake_prefix_path.dsv'
+[2.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/hook/cmake_prefix_path.sh'
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/bin'
+[2.324s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/lib/pkgconfig/powerarm_urdf.pc'
+[2.324s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/lib/python3.10/site-packages'
+[2.324s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_urdf/bin'
+[2.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.ps1'
+[2.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.dsv'
+[2.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.sh'
+[2.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.bash'
+[2.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_urdf/share/powerarm_urdf/package.zsh'
+[2.342s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/powerarm_urdf/share/colcon-core/packages/powerarm_urdf)
+[2.342s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wenda/powerarm_ws/src/powerarm_moveit_config' with build type 'ament_cmake'
+[2.342s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wenda/powerarm_ws/src/powerarm_moveit_config'
+[2.360s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm_moveit_config': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm_moveit_config -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm_moveit_config
+[2.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm_moveit_config -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm_moveit_config
+[2.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm_moveit_config': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_moveit_config -- -j16 -l16
+[2.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_moveit_config -- -j16 -l16
+[2.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm_moveit_config': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm_moveit_config
+[2.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(powerarm_moveit_config)
+[2.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm_moveit_config
+[2.734s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config' for CMake module files
+[2.734s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config' for CMake config files
+[2.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('powerarm_moveit_config', 'cmake_prefix_path')
+[2.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/hook/cmake_prefix_path.ps1'
+[2.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/hook/cmake_prefix_path.dsv'
+[2.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/hook/cmake_prefix_path.sh'
+[2.759s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/bin'
+[2.759s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/lib/pkgconfig/powerarm_moveit_config.pc'
+[2.759s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/lib/python3.10/site-packages'
+[2.759s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/bin'
+[2.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.ps1'
+[2.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.dsv'
+[2.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.sh'
+[2.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.bash'
+[2.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.zsh'
+[2.776s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/colcon-core/packages/powerarm_moveit_config)
+[2.812s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(powerarm_moveit_config)
+[2.827s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config' for CMake module files
+[2.828s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config' for CMake config files
+[2.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('powerarm_moveit_config', 'cmake_prefix_path')
+[2.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/hook/cmake_prefix_path.ps1'
+[2.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/hook/cmake_prefix_path.dsv'
+[2.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/hook/cmake_prefix_path.sh'
+[2.847s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/bin'
+[2.847s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/lib/pkgconfig/powerarm_moveit_config.pc'
+[2.847s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/lib/python3.10/site-packages'
+[2.848s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm_moveit_config/bin'
+[2.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.ps1'
+[2.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.dsv'
+[2.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.sh'
+[2.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.bash'
+[2.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/powerarm_moveit_config/package.zsh'
+[2.865s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/powerarm_moveit_config/share/colcon-core/packages/powerarm_moveit_config)
+[5.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/moveit_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/moveit_visual_tools-ros2 -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/moveit_visual_tools
+[5.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/moveit_visual_tools -- -j16 -l16
+[5.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/moveit_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/moveit_visual_tools -- -j16 -l16
+[5.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/moveit_visual_tools
+[6.005s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_visual_tools)
+[6.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/moveit_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/moveit_visual_tools
+[6.022s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools' for CMake module files
+[6.022s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools' for CMake config files
+[6.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'cmake_prefix_path')
+[6.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.ps1'
+[6.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.dsv'
+[6.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.sh'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib'
+[6.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'ld_library_path_lib')
+[6.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.ps1'
+[6.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.dsv'
+[6.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.sh'
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/bin'
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib/pkgconfig/moveit_visual_tools.pc'
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib/python3.10/site-packages'
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/bin'
+[6.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.ps1'
+[6.075s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.dsv'
+[6.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.sh'
+[6.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.bash'
+[6.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.zsh'
+[6.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/moveit_visual_tools/share/colcon-core/packages/moveit_visual_tools)
+[6.118s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_visual_tools)
+[6.133s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools' for CMake module files
+[6.133s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools' for CMake config files
+[6.133s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'cmake_prefix_path')
+[6.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.ps1'
+[6.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.dsv'
+[6.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/cmake_prefix_path.sh'
+[6.150s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib'
+[6.150s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_visual_tools', 'ld_library_path_lib')
+[6.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.ps1'
+[6.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.dsv'
+[6.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/hook/ld_library_path_lib.sh'
+[6.166s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/bin'
+[6.166s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib/pkgconfig/moveit_visual_tools.pc'
+[6.166s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/lib/python3.10/site-packages'
+[6.166s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/moveit_visual_tools/bin'
+[6.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.ps1'
+[6.182s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.dsv'
+[6.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.sh'
+[6.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.bash'
+[6.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.zsh'
+[6.184s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/moveit_visual_tools/share/colcon-core/packages/moveit_visual_tools)
+[6.184s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wenda/powerarm_ws/src/powerarm' with build type 'ament_cmake'
+[6.184s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wenda/powerarm_ws/src/powerarm'
+[6.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm
+[11.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/powerarm -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/powerarm
+[11.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[20.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm -- -j16 -l16
+[20.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wenda/powerarm_ws/build/powerarm': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm
+[20.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(powerarm)
+[20.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wenda/powerarm_ws/build/powerarm' returned '0': CMAKE_PREFIX_PATH=/home/wenda/powerarm_ws/install/moveit_visual_tools:/home/wenda/powerarm_ws/install/powerarm_moveit_config:/home/wenda/powerarm_ws/install/powerarm_urdf:/home/wenda/powerarm_ws/install/powerarm:/home/wenda/test_ws/install/elite_ec66_moveit_config:/home/wenda/test_ws/install/elite_description:/opt/ros/humble /usr/bin/cmake --install /home/wenda/powerarm_ws/build/powerarm
+[20.215s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm' for CMake module files
+[20.215s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm' for CMake config files
+[20.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('powerarm', 'cmake_prefix_path')
+[20.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/hook/cmake_prefix_path.ps1'
+[20.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/hook/cmake_prefix_path.dsv'
+[20.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/hook/cmake_prefix_path.sh'
+[20.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/lib'
+[20.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/bin'
+[20.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/lib/pkgconfig/powerarm.pc'
+[20.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/lib/python3.10/site-packages'
+[20.232s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/bin'
+[20.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.ps1'
+[20.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv'
+[20.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.sh'
+[20.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.bash'
+[20.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.zsh'
+[20.249s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/powerarm/share/colcon-core/packages/powerarm)
+[20.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(powerarm)
+[20.300s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm' for CMake module files
+[20.301s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm' for CMake config files
+[20.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('powerarm', 'cmake_prefix_path')
+[20.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/hook/cmake_prefix_path.ps1'
+[20.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/hook/cmake_prefix_path.dsv'
+[20.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/hook/cmake_prefix_path.sh'
+[20.317s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/lib'
+[20.318s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/bin'
+[20.318s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/lib/pkgconfig/powerarm.pc'
+[20.318s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/lib/python3.10/site-packages'
+[20.318s] Level 1:colcon.colcon_core.environment:checking '/home/wenda/powerarm_ws/install/powerarm/bin'
+[20.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.ps1'
+[20.334s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.dsv'
+[20.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.sh'
+[20.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.bash'
+[20.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/wenda/powerarm_ws/install/powerarm/share/powerarm/package.zsh'
+[20.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wenda/powerarm_ws/install/powerarm/share/colcon-core/packages/powerarm)
+[20.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.336s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.357s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.367s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.382s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wenda/powerarm_ws/install/local_setup.ps1'
+[20.384s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wenda/powerarm_ws/install/_local_setup_util_ps1.py'
+[20.385s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wenda/powerarm_ws/install/setup.ps1'
+[20.401s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wenda/powerarm_ws/install/local_setup.sh'
+[20.401s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wenda/powerarm_ws/install/_local_setup_util_sh.py'
+[20.401s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wenda/powerarm_ws/install/setup.sh'
+[20.419s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wenda/powerarm_ws/install/local_setup.bash'
+[20.419s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wenda/powerarm_ws/install/setup.bash'
+[20.434s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wenda/powerarm_ws/install/local_setup.zsh'
+[20.435s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wenda/powerarm_ws/install/setup.zsh'

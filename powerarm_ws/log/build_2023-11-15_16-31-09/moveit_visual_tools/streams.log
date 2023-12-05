@@ -1,0 +1,51 @@
+[0.081s] Invoking command in '/home/wenda/powerarm_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/moveit_visual_tools-ros2 -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/moveit_visual_tools
+[0.154s] -- The C compiler identification is GNU 11.4.0
+[0.205s] -- The CXX compiler identification is GNU 11.4.0
+[0.212s] -- Detecting C compiler ABI info
+[0.270s] -- Detecting C compiler ABI info - done
+[0.277s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.278s] -- Detecting C compile features
+[0.278s] -- Detecting C compile features - done
+[0.281s] -- Detecting CXX compiler ABI info
+[0.349s] -- Detecting CXX compiler ABI info - done
+[0.357s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.357s] -- Detecting CXX compile features
+[0.358s] -- Detecting CXX compile features - done
+[0.360s] -- Found moveit_common: 2.5.5 (/opt/ros/humble/share/moveit_common/cmake)
+[0.362s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.525s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.682s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.686s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.686s] -- BACKWARD_HAS_UNWIND=1
+[0.686s] -- BACKWARD_HAS_BACKTRACE=0
+[0.686s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.687s] -- BACKWARD_HAS_DW=1
+[0.687s] -- BACKWARD_HAS_BFD=0
+[0.687s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.697s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[0.704s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.737s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.741s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.750s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.765s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.785s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.922s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.922s]   By not providing "Findgraph_msgs.cmake" in CMAKE_MODULE_PATH this project
+[0.922s]   has asked CMake to find a package configuration file provided by
+[0.922s]   "graph_msgs", but CMake did not find one.
+[0.922s] 
+[0.922s]   Could not find a package configuration file provided by "graph_msgs" with
+[0.922s]   any of the following names:
+[0.922s] 
+[0.922s]     graph_msgsConfig.cmake
+[0.922s]     graph_msgs-config.cmake
+[0.923s] 
+[0.923s]   Add the installation prefix of "graph_msgs" to CMAKE_PREFIX_PATH or set
+[0.923s]   "graph_msgs_DIR" to a directory containing one of the above files.  If
+[0.923s]   "graph_msgs" provides a separate development package or SDK, be sure it has
+[0.923s]   been installed.
+[0.923s] 
+[0.923s] [0m
+[0.923s] -- Configuring incomplete, errors occurred!
+[0.923s] See also "/home/wenda/powerarm_ws/build/moveit_visual_tools/CMakeFiles/CMakeOutput.log".
+[0.928s] Invoked command in '/home/wenda/powerarm_ws/build/moveit_visual_tools' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wenda/powerarm_ws/src/moveit_visual_tools-ros2 -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/wenda/powerarm_ws/install/moveit_visual_tools
