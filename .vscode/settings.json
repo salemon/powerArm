@@ -1,0 +1,4 @@
+{
+    "ros.distro": "humble",
+    "cmake.sourceDirectory": "/home/wenda/powerArm/powerarm_ws/src/moveit_visual_tools-ros2"
+}
