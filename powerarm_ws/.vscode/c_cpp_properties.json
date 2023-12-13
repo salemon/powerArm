@@ -6,10 +6,10 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/wenda/powerArm/powerarm_ws/install/moveit_visual_tools/include/**",
+        "/home/wenda/powerarm_ws/install/moveit_visual_tools/include/**",
         "/opt/ros/humble/include/**",
-        "/home/wenda/powerArm/powerarm_ws/src/moveit_visual_tools-ros2/include/**",
-        "/home/wenda/powerArm/powerarm_ws/src/powerarm/include/**",
+        "/home/wenda/powerarm_ws/src/moveit_visual_tools-ros2/include/**",
+        "/home/wenda/powerarm_ws/src/powerarm/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

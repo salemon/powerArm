@@ -163,50 +163,77 @@ int main(int argc, char *argv[])
 	// float dt = 0.1;
 	std::vector<std::vector<double>> joint_limits {{-pi/2, pi/4}, {-pi/6, pi/2}, {0.0, 0.0}, {0.0, pi/2}};
 
-	double dx = 
-	double dy = 
+	for(int theta = 0; theta <= 360; theta ++){
+		// y = y_s + r(1 - std::cos(theta/180.0 * 3.1415926);
+		// z = x_s + r * std::sin(theta/180.0 * 3.1415926);
 
-	// for(int theta = 0; theta <= 360; theta ++){
-	// 	// y = y_s + r(1 - std::cos(theta/180.0 * 3.1415926);
-	// 	// z = x_s + r * std::sin(theta/180.0 * 3.1415926);
+		pos_dot.x() = 0;
+		pos_dot.y() = r * std::sin(theta/180.0 * 3.1415926) * 1.0 / 180.0 * 3.1415926;
+		pos_dot.z() = r * std::cos(theta/180.0 * 3.1415926) * 1.0 / 180.0 * 3.1415926;
 
-	// 	// pos_dot.x() = 0;
-	// 	// pos_dot.y() = r * std::sin(theta/180.0 * 3.1415926) * 1.0 / 180.0 * 3.1415926;
-	// 	// pos_dot.z() = r * std::cos(theta/180.0 * 3.1415926) * 1.0 / 180.0 * 3.1415926;
+		// if (theta % 90 == 0){
+		// 	RCLCPP_INFO_STREAM(LOGGER, "pos derivation: \n" << pos_dot << "\n");
+		// 	RCLCPP_INFO_STREAM(LOGGER, "pos: \n" << cur_pos << "\n");
+		// }
 
-	// 	// if (theta % 90 == 0){
-	// 	// 	RCLCPP_INFO_STREAM(LOGGER, "pos derivation: \n" << pos_dot << "\n");
-	// 	// 	RCLCPP_INFO_STREAM(LOGGER, "pos: \n" << cur_pos << "\n");
-	// 	// }
+		cur_pos += pos_dot;
 
-	// 	// cur_pos += pos_dot;
+		// current_state->getJacobian(joint_model_group, current_state->getLinkModel(joint_model_group->getLinkModelNames().back()),
+		// 				reference_point_position, jacobian);
 
-	// 	// current_state->getJacobian(joint_model_group, current_state->getLinkModel(joint_model_group->getLinkModelNames().back()),
-	// 	// 				reference_point_position, jacobian);
+		// jacobian_reduced = jacobian.block(idx[0], 0, idx.size(), jacobian.cols());
+		// jacobian_inv = jacobian_reduced.completeOrthogonalDecomposition().pseudoInverse();
 
-	// 	// jacobian_reduced = jacobian.block(idx[0], 0, idx.size(), jacobian.cols());
-	// 	// jacobian_inv = jacobian_reduced.completeOrthogonalDecomposition().pseudoInverse();
+		// joint_dot = jacobian_inv * pos_dot;
 
-	// 	// joint_dot = jacobian_inv * pos_dot;
+		// joints limitation
+		for (std::size_t i = 0; i < joint_names.size(); i++)
+		{
+			joint_values[i] += joint_dot[i];
 
-	// 	// joints limitation
+			// if (theta % 45 == 0){
+			// 	RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
+			// }
 
+			while (joint_values[i] >= pi){
+				joint_values[i] -= 2.0 * pi;
+			}
 
-	// 	current_state->setJointGroupPositions(joint_model_group, joint_values);
-	// 	current_state->copyJointGroupPositions(joint_model_group, joint_values);
+			while (joint_values[i] <= -pi){
+				joint_values[i] += 2.0 * pi;
+			}
+
+			// if (theta % 45 == 0){
+			// 	RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
+			// }
+
+			joint_values[i] = std::min(std::max(joint_values[i], joint_limits[i][0]), joint_limits[i][1]);
+			
+			// if (temp != joint_values[i]){
+			// 	std::cout << theta << ',' << i << std::endl;
+			// }
+		}
+
+		// for (std::size_t i = 0; i < joint_names.size(); ++i)
+		// {
+		// 	joint_values[i] += joint_dot[i];
+		// }
+
+		current_state->setJointGroupPositions(joint_model_group, joint_values);
+		current_state->copyJointGroupPositions(joint_model_group, joint_values);
 		
-	// 	// if (theta % 45 == 0){
-	// 	// 	for (std::size_t i = 0; i < joint_names.size(); ++i)
-	// 	// 	{
-	// 	// 		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
-	// 	// 	}
+		// if (theta % 45 == 0){
+		// 	for (std::size_t i = 0; i < joint_names.size(); ++i)
+		// 	{
+		// 		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
+		// 	}
 
-	// 	// 	RCLCPP_INFO_STREAM(LOGGER, "joint derivation: \n" << joint_dot << "\n");
-	// 	// }
+		// 	RCLCPP_INFO_STREAM(LOGGER, "joint derivation: \n" << joint_dot << "\n");
+		// }
 
-	// 	trajectory_point.positions = joint_values;
-	// 	trajectory.joint_trajectory.points.push_back(trajectory_point);
-	// }
+		trajectory_point.positions = joint_values;
+		trajectory.joint_trajectory.points.push_back(trajectory_point);
+	}
 	
 	
 	for (std::size_t i = 0; i < joint_names.size(); ++i)
