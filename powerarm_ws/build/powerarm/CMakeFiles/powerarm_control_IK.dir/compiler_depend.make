@@ -1373,6 +1373,7 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
   /opt/ros/humble/include/moveit/kinematics_plugin_loader/kinematics_plugin_loader.h \
+  /opt/ros/humble/include/moveit/robot_state/conversions.h \
   /opt/ros/humble/include/moveit/trajectory_processing/time_optimal_trajectory_generation.h \
   /opt/ros/humble/include/moveit/robot_trajectory/robot_trajectory.h \
   /opt/ros/humble/include/moveit/trajectory_processing/time_parameterization.h \
@@ -1452,6 +1453,8 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/display_robot_state.hpp:
 
 /opt/ros/humble/include/moveit/robot_trajectory/robot_trajectory.h:
+
+/opt/ros/humble/include/moveit/robot_state/conversions.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
 

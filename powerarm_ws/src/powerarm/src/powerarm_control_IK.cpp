@@ -8,6 +8,7 @@
 #include <moveit/robot_model_loader/robot_model_loader.h>
 #include <moveit/robot_model/robot_model.h>
 #include <moveit/robot_state/robot_state.h>
+#include <moveit/robot_state/conversions.h>
 
 #include <moveit/trajectory_processing/time_optimal_trajectory_generation.h>
 
@@ -16,6 +17,7 @@
 
 #include <moveit/planning_interface/planning_interface.h>
 #include <moveit/planning_scene/planning_scene.h>
+// #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 // #include <yaml-cpp/yaml.h>
 // #include <fstream>
@@ -46,15 +48,8 @@ int main(int argc, char *argv[])
 	RCLCPP_INFO(LOGGER, "Model frame: %s", kinematic_model->getModelFrame().c_str());
 
 	// initial robot state
-	moveit::core::RobotStatePtr robot_state(new moveit::core::RobotState(kinematic_model));
 	moveit::core::JointModelGroup* joint_model_group = kinematic_model->getJointModelGroup(PLANNING_GROUP);
 	
-	// planning scene
-	// planning_scene::PlanningScenePtr planning_scene(new planning_scene::PlanningScene(kinematic_model));
-	// planning_scene->getCurrentStateNonConst().setToDefaultValues(joint_model_group, "ready");
-	// planning_scene->getCurrentStateNonConst().setToDefaultValues();
-
-	robot_state->setToDefaultValues();
 	moveit::core::RobotStatePtr current_state = move_group.getCurrentState();
 	moveit::planning_interface::MoveGroupInterface::Plan my_plan;
 	// start_state->setJointGroupPositions(joint_model_group, my_plan.trajectory_.joint_trajectory.points.back().positions);
@@ -77,206 +72,205 @@ int main(int argc, char *argv[])
 							reference_point_position, jacobian);
 	RCLCPP_INFO_STREAM(LOGGER, "Jacobian: \n" << jacobian << "\n");
 
-	Eigen::MatrixXd jacobian_reduced;
-	Eigen::MatrixXd jacobian_inv;
-	std::vector<int> idx = {0, 1, 2};
-	jacobian_reduced = jacobian.block(idx[0], 0, idx.size(), jacobian.cols());
-	jacobian_inv = jacobian_reduced.completeOrthogonalDecomposition().pseudoInverse();
-	Eigen::MatrixXd prod;
-	prod = jacobian_reduced * jacobian_inv;
-	RCLCPP_INFO_STREAM(LOGGER, "Reduced matrix of Jacobian: \n" << jacobian_reduced << "\n");
-	RCLCPP_INFO_STREAM(LOGGER, "Inverse matrix of reduced jacobian: \n" << jacobian_inv << "\n");
-	RCLCPP_INFO_STREAM(LOGGER, "Product of jacobian: \n" << prod << "\n"); 
-	// moveit::core::RobotState goal_state(kinematic_model);
-
 	move_group.setPlanningTime(10.0);
 
 	// Set a target Pose
-	std::vector<geometry_msgs::msg::Pose> target_poses;
-	geometry_msgs::msg::Pose sample_pose;
+	// std::vector<geometry_msgs::msg::Pose> target_poses;
+	geometry_msgs::msg::Pose sample_left;
 
 	// left:
 	// sample_pose.orientation.x = -4.456e-05;
 	// sample_pose.orientation.y = -2.6453e-06;
 	// sample_pose.orientation.z = -0.70255;
 	// sample_pose.orientation.w = 0.71164;
-	sample_pose.position.x = 1.3066;
-	sample_pose.position.y = -0.11213;
-	sample_pose.position.z = 1.0248;
-	target_poses.push_back(sample_pose);
+	sample_left.position.x = 1.304;
+	sample_left.position.y = -0.11213;
+	sample_left.position.z = 1.0248;
+	// target_poses.push_back(sample_pose);
 
+	// right:
+	geometry_msgs::msg::Pose sample_right;
+	// sample_pose.orientation.x = -0.0018889;
+	// sample_pose.orientation.y = -0.0021159;
+	// sample_pose.orientation.z = -0.61066;
+	// sample_pose.orientation.w = 0.79189;
+	sample_right.position.x = 1.304;
+	sample_right.position.y = 0.16549;
+	sample_right.position.z = 1.0248;
+
+	// up:
+	geometry_msgs::msg::Pose sample_up;
+	// sample_pose.orientation.x = -0.0018889;
+	// sample_pose.orientation.y = -0.0021159;
+	// sample_pose.orientation.z = -0.61066;
+	// sample_pose.orientation.w = 0.79189;
+	sample_up.position.x = 1.304;
+	sample_up.position.y = 0.02668;
+	sample_up.position.z = 1.16361;
+
+	// down:
+	geometry_msgs::msg::Pose sample_down;
+	// sample_pose.orientation.x = -0.0018889;
+	// sample_pose.orientation.y = -0.0021159;
+	// sample_pose.orientation.z = -0.61066;
+	// sample_pose.orientation.w = 0.79189;
+	sample_down.position.x = 1.304;
+	sample_down.position.y = 0.02668;
+	sample_down.position.z = 0.88599;
+
+
+
+	move_group.setPositionTarget(sample_left.position.x , sample_left.position.y, sample_left.position.z, "ee_link");
 	bool success = (move_group.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
-	if (success){
-		move_group.setPositionTarget(sample_pose.position.x , sample_pose.position.y, sample_pose.position.z, "ee_link");
-		size_t trajectory_size = my_plan.trajectory_.joint_trajectory.points.size();
-		std::string trajectory_size_str = std::to_string(trajectory_size);
-		RCLCPP_INFO(LOGGER, "The total number of points on the trajactory %s", trajectory_size_str.c_str());
-
+	if(success){
+		// for(std::size_t i = 0; i <  my_plan.trajectory_.joint_trajectory.points.size(); i++) {
+		// 	my_plan.trajectory_.joint_trajectory.points[i].positions[2] = 0.0;
+		// }
+		
 		current_state->setJointGroupPositions(joint_model_group, my_plan.trajectory_.joint_trajectory.points.back().positions);
 		move_group.setStartState(*current_state);
 		move_group.execute(my_plan);
 	}
 
-	// right:
-	// sample_pose.orientation.x = -0.0018889;
-	// sample_pose.orientation.y = -0.0021159;
-	// sample_pose.orientation.z = -0.61066;
-	// sample_pose.orientation.w = 0.79189;
-	// sample_pose.position.x = 1.3043;
-	// sample_pose.position.y = 0.16549;
-	// sample_pose.position.z = 1.0248;
+	// const Eigen::Isometry3d& current_tf = current_state->getGlobalLinkTransform("ee_link");
+	// geometry_msgs::msg::Pose current_pose = move_group.getCurrentPose("ee_link").pose;
+	// geometry_msgs::msg::Pose current_tf_pose;
 
-	// sample_pose.orientation.x = -0.10161; 
-	// sample_pose.orientation.y = 0.14272; 
-	// sample_pose.orientation.z = -0.28253; 
-	// sample_pose.orientation.w = 0.94312;
-	// sample_pose.position.x = 1.1077; 
-	// sample_pose.position.y = 0.39747; 
-	// sample_pose.position.z = 0.83359;
-	// target_poses.push_back(sample_pose);
+	// current_tf_pose.position.x = current_tf.translation().x();
+	// current_tf_pose.position.y = current_tf.translation().y();
+	// current_tf_pose.position.z = current_tf.translation().z();
 
-	// move_group.setPoseTarget(sample_pose, "ee_link");
+	// Eigen::Quaterniond q = (Eigen::Quaterniond)current_tf.linear();
+	// current_tf_pose.orientation.x = q.x();
+	// current_tf_pose.orientation.y = q.y();
+	// current_tf_pose.orientation.z = q.z();
+	// current_tf_pose.orientation.w = q.w();
+
+	// if(current_tf_pose.orientation.w < 0){
+	// 	current_tf_pose.orientation.x *= -1;
+	// 	current_tf_pose.orientation.y *= -1;
+	// 	current_tf_pose.orientation.z *= -1;
+	// 	current_tf_pose.orientation.w *= -1;
+	// }
+	
+	// RCLCPP_INFO_STREAM(LOGGER, "Current Pose from move group: \n" << geometry_msgs::msg::to_yaml(current_pose));
+	// RCLCPP_INFO_STREAM(LOGGER, "Current Pose from transformation matrix: \n" << geometry_msgs::msg::to_yaml(current_tf_pose));
+
 
 	// circular path segment
-	std::vector<std::vector<double>> target_pos;
-	const Eigen::Isometry3d& end_effector_state = current_state->getGlobalLinkTransform("ee_link");
-	Eigen::Vector3d cur_pos = end_effector_state.translation();
-	Eigen::Vector3d pos_dot;
-	Eigen::Vector4d joint_dot;
+	// const Eigen::Isometry3d& end_effector_state = current_state->getGlobalLinkTransform("ee_link");
+	// Eigen::Vector3d cur_pos = end_effector_state.translation();
+
+	// Eigen::Vector3d pos_dot;
+	// Eigen::Vector4d joint_dot;
+
+	current_state = move_group.getCurrentState();
+	current_state->copyJointGroupPositions(joint_model_group, joint_values);
+
+	for (std::size_t i = 0; i < joint_names.size(); i++)
+	{
+		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
+	}
+
+	float r = (sample_right.position.y - sample_left.position.y - 0.05) / 2.0;
+	// float dy;
+	// float dz;
+	// float dt = 0.1;
+
+	int num_samples = 16;
+	// double dy = (sample_right.position.y - sample_left.position.y) / num_samples;
+	// RCLCPP_INFO(LOGGER, "step size %f", dy);
+
+	geometry_msgs::msg::Pose current_pose = move_group.getCurrentPose("ee_link").pose;
+	RCLCPP_INFO_STREAM(LOGGER, "Current Pose before plan: \n" << geometry_msgs::msg::to_yaml(current_pose));
+
+	std::vector<geometry_msgs::msg::Pose> waypoints;
+	waypoints.push_back(current_pose);
+
+	moveit::core::RobotState start_state = *current_state;
+
+	float y_init = current_pose.position.y;
+	float z_init = current_pose.position.z;
+
+	for (int i = 0; i < num_samples; i++){
+		// dy = r * std::sin(360.0 / num_samples * (i + 1.0) / 180.0 * pi) * 1.0 / 180.0 * pi;
+		// dz = r * std::cos(360.0 / num_samples * (i + 1.0) / 180.0 * pi) * 1.0 / 180.0 * pi;
+
+		current_pose.position.y = y_init + r * (1 - std::cos(360.0 / num_samples * (i + 1.0) / 180.0 * pi));
+		current_pose.position.z = z_init + r * std::sin(360.0 / num_samples * (i + 1.0) / 180.0 * pi);
+
+		move_group.setPositionTarget(current_pose.position.x, current_pose.position.y, current_pose.position.z, "ee_link");
+
+		success = (move_group.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+		if (!success){
+			RCLCPP_ERROR(LOGGER, "Position %d is %s", i, success ? "" : "FAILED");
+		}
+
+		// my_plan.trajectory_.joint_trajectory.points.back().positions[2] = 0;
+		current_state->setJointGroupPositions(joint_model_group, my_plan.trajectory_.joint_trajectory.points.back().positions);
+		const Eigen::Isometry3d& current_tf_pose = current_state->getGlobalLinkTransform("ee_link");
+
+		current_pose.position.x = current_tf_pose.translation().x();
+		current_pose.position.y = current_tf_pose.translation().y();
+		current_pose.position.z = current_tf_pose.translation().z();
+
+		Eigen::Quaterniond q = (Eigen::Quaterniond)current_tf_pose.linear();
+		current_pose.orientation.x = q.x();
+		current_pose.orientation.y = q.y();
+		current_pose.orientation.z = q.z();
+		current_pose.orientation.w = q.w();
+
+		if(current_pose.orientation.w < 0){
+			current_pose.orientation.x *= -1;
+			current_pose.orientation.y *= -1;
+			current_pose.orientation.z *= -1;
+			current_pose.orientation.w *= -1;
+		}
+		
+		RCLCPP_INFO_STREAM(LOGGER, "Current Pose: \n" << geometry_msgs::msg::to_yaml(current_pose));
+		// RCLCPP_INFO(LOGGER, "Caculated dy: %.5f, dz: %.5f \n", dy, dz);
+
+		move_group.setStartState(*current_state);
+		waypoints.push_back(current_pose);
+	}
+
+	move_group.setStartState(start_state);
+	// current_pose = move_group.getCurrentPose("ee_link").pose;
+	// RCLCPP_INFO_STREAM(LOGGER, "Current Pose after plan: \n" << geometry_msgs::msg::to_yaml(current_pose));
 
 	moveit_msgs::msg::RobotTrajectory trajectory;
-
-	current_state = move_group.getCurrentState();
-	current_state->copyJointGroupPositions(joint_model_group, joint_values);
-	trajectory_msgs::msg::JointTrajectoryPoint trajectory_point;
-	trajectory_point.positions = joint_values;
-	trajectory.joint_trajectory.points.push_back(trajectory_point);
-
-	for (std::size_t i = 0; i < joint_names.size(); i++)
-	{
-		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), trajectory.joint_trajectory.points.back().positions[i]);
-	}
-
-	RCLCPP_INFO(LOGGER, "The type of trajectory_point.positions is %s",  typeid(trajectory_point.positions).name());
-
-	float r = 0.13;
-	// float dt = 0.1;
-	std::vector<std::vector<double>> joint_limits {{-pi/2, pi/4}, {-pi/6, pi/2}, {0.0, 0.0}, {0.0, pi/2}};
-
-	double dx = 
-	double dy = 
-
-	// for(int theta = 0; theta <= 360; theta ++){
-	// 	// y = y_s + r(1 - std::cos(theta/180.0 * 3.1415926);
-	// 	// z = x_s + r * std::sin(theta/180.0 * 3.1415926);
-
-	// 	// pos_dot.x() = 0;
-	// 	// pos_dot.y() = r * std::sin(theta/180.0 * 3.1415926) * 1.0 / 180.0 * 3.1415926;
-	// 	// pos_dot.z() = r * std::cos(theta/180.0 * 3.1415926) * 1.0 / 180.0 * 3.1415926;
-
-	// 	// if (theta % 90 == 0){
-	// 	// 	RCLCPP_INFO_STREAM(LOGGER, "pos derivation: \n" << pos_dot << "\n");
-	// 	// 	RCLCPP_INFO_STREAM(LOGGER, "pos: \n" << cur_pos << "\n");
-	// 	// }
-
-	// 	// cur_pos += pos_dot;
-
-	// 	// current_state->getJacobian(joint_model_group, current_state->getLinkModel(joint_model_group->getLinkModelNames().back()),
-	// 	// 				reference_point_position, jacobian);
-
-	// 	// jacobian_reduced = jacobian.block(idx[0], 0, idx.size(), jacobian.cols());
-	// 	// jacobian_inv = jacobian_reduced.completeOrthogonalDecomposition().pseudoInverse();
-
-	// 	// joint_dot = jacobian_inv * pos_dot;
-
-	// 	// joints limitation
-
-
-	// 	current_state->setJointGroupPositions(joint_model_group, joint_values);
-	// 	current_state->copyJointGroupPositions(joint_model_group, joint_values);
-		
-	// 	// if (theta % 45 == 0){
-	// 	// 	for (std::size_t i = 0; i < joint_names.size(); ++i)
-	// 	// 	{
-	// 	// 		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
-	// 	// 	}
-
-	// 	// 	RCLCPP_INFO_STREAM(LOGGER, "joint derivation: \n" << joint_dot << "\n");
-	// 	// }
-
-	// 	trajectory_point.positions = joint_values;
-	// 	trajectory.joint_trajectory.points.push_back(trajectory_point);
-	// }
+	const double jump_threshold = 0.0;
+	const double eef_step = 0.05;
+	double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
+	RCLCPP_INFO(LOGGER, "Visualizing circle plan (Cartesian path) (%.2f%% achieved)", fraction * 100.0);
 	
-	
-	for (std::size_t i = 0; i < joint_names.size(); ++i)
-	{
-		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
-	}
+	moveit::core::robotStateToRobotStateMsg(start_state, my_plan.start_state_);
+	my_plan.trajectory_ = trajectory;
 
-	moveit::core::RobotStatePtr end_state = move_group.getCurrentState();
-	end_state->copyJointGroupPositions(joint_model_group, joint_values);
-
-	for (std::size_t i = 0; i < joint_names.size(); ++i)
-	{
-		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
-	}
-
-	// std::cout << trajectory.joint_trajectory.points.size() << std::endl;
-	// for (std::size_t i = 0; i < trajectory.joint_trajectory.points.size(); i++){
-	// 	for (std::size_t j = 0; j < joint_names.size(); j++){
-	// 		printf("%.5f\t",  trajectory.joint_trajectory.points[i].positions[j]);
-	// 	}
-	// 	printf("\n");
-	// }
-
-	robot_trajectory::RobotTrajectory rt(move_group.getRobotModel(), PLANNING_GROUP);
-	rt.setRobotTrajectoryMsg(*move_group.getCurrentState(), trajectory);
-
-	trajectory_processing::TimeOptimalTrajectoryGeneration time_param;
-	time_param.computeTimeStamps(rt, 1.0, 1.0);
-
-	moveit_msgs::msg::RobotTrajectory rt_msg;
-	rt.getRobotTrajectoryMsg(rt_msg);
-
-	moveit::planning_interface::MoveGroupInterface::Plan combined_plan;
-	combined_plan.trajectory_.joint_trajectory = rt_msg.joint_trajectory;
-
-	combined_plan.trajectory_.joint_trajectory = trajectory.joint_trajectory;
-
-	for(std::size_t i = 0; i <  my_plan.trajectory_.joint_trajectory.points.size(); i++) {
-		for(std::size_t j = 0; j <  my_plan.trajectory_.joint_trajectory.points[i].positions.size(); j++) {
-			printf("%.5f\t",  my_plan.trajectory_.joint_trajectory.points[i].positions[j]);
-		}
-		printf("\n");
-		printf("time_from_start %u %u\n", my_plan.trajectory_.joint_trajectory.points[i].time_from_start.sec, my_plan.trajectory_.joint_trajectory.points[i].time_from_start.nanosec);
-		printf("\n");
-	}
-
-
-	move_group.execute(combined_plan);
-
-	current_state = move_group.getCurrentState();
-	// const Eigen::Isometry3d& end_effector_state = current_state->getGlobalLinkTransform("ee_link");
-
-	RCLCPP_INFO_STREAM(LOGGER, "Translation: \n" << end_effector_state.translation() << "\n");
-	RCLCPP_INFO_STREAM(LOGGER, "Rotation: \n" << end_effector_state.rotation() << "\n");
-
-	// moveit::core::RobotStatePtr current_state = move_group.getCurrentState(10);
 	// current_state->copyJointGroupPositions(joint_model_group, joint_values);
 
-	// robot_state need to be updated manually every time you want to get the current state
-	current_state->copyJointGroupPositions(joint_model_group, joint_values);
+	// for (std::size_t i = 0; i < joint_names.size(); i++)
+	// {
+	// 	RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
+	// }
+
+	start_state.copyJointGroupPositions(joint_model_group, joint_values);
+
 	for (std::size_t i = 0; i < joint_names.size(); i++)
 	{
 		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
 	}
+	
 
-	// Eigen::Vector3d reference_point_position(0.0, 0.0, 0.0);
-	// Eigen::MatrixXd jacobian;
-	current_state->getJacobian(joint_model_group, current_state->getLinkModel(joint_model_group->getLinkModelNames().back()),
-							reference_point_position, jacobian);
-	RCLCPP_INFO_STREAM(LOGGER, "Jacobian: \n" << jacobian << "\n");
+	move_group.execute(trajectory);
+	// move_group.setStartState(start_state);
+	// move_group.setPositionTarget(sample_right.position.x, sample_right.position.y, sample_right.position.z, "ee_link");
+	// success = (move_group.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+	// if (!success){
+	// 	RCLCPP_ERROR(LOGGER, "Position is %s", success ? "" : "FAILED");
+	// }
+
+	// move_group.execute(my_plan);
 
 	rclcpp::shutdown();
 	return 0;

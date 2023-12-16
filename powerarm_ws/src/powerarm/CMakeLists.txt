@@ -11,6 +11,11 @@ find_package(moveit_ros_planning_interface REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(moveit_visual_tools REQUIRED)
 
+# find_package(tf2 REQUIRED)
+# find_package(tf2_eigen REQUIRED)
+# find_package(tf2_geometry_msgs REQUIRED)
+# find_package(tf2_ros REQUIRED)
+
 # add_executable(powerarm_control_joint_space src/powerarm_control_joint_space.cpp)
 # target_include_directories(powerarm_control_joint_space PUBLIC
 #   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
