@@ -1,2 +1,0 @@
-[0.085s] Invoking command in '/home/wenda/powerarm_ws/build/powerarm_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_urdf -- -j16 -l16
-[0.116s] Invoked command in '/home/wenda/powerarm_ws/build/powerarm_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/powerarm_urdf -- -j16 -l16

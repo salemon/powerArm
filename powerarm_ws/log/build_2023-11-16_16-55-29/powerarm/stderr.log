@@ -1,4 +1,0 @@
-[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_state.cpp:37:46:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_model_group[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-   37 |         const moveit::core::JointModelGroup* [01;35m[Kjoint_model_group[m[K =
-      |                                              [01;35m[K^~~~~~~~~~~~~~~~~[m[K

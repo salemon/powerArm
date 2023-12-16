@@ -1,7 +1,0 @@
-[01m[K/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_joint_space.cpp:13:10:[m[K [01;31m[Kfatal error: [m[Krobot_trajectory.h: No such file or directory
-   13 | #include [01;31m[K<robot_trajectory.h>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/powerarm_control_joint_space.dir/build.make:76: CMakeFiles/powerarm_control_joint_space.dir/src/powerarm_control_joint_space.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/powerarm_control_joint_space.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

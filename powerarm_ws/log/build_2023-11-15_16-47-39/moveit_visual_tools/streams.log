@@ -1,5 +1,0 @@
-[0.165s] Invoking command in '/home/wenda/powerarm_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/moveit_visual_tools -- -j16 -l16
-[0.184s] [0mCMake Error: The source directory "/home/wenda/powerarm_ws/src/moveit_visual_tools-ros2" does not exist.
-[0.184s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.184s] gmake: *** [Makefile:362: cmake_check_build_system] Error 1
-[0.186s] Invoked command in '/home/wenda/powerarm_ws/build/moveit_visual_tools' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wenda/powerarm_ws/build/moveit_visual_tools -- -j16 -l16
