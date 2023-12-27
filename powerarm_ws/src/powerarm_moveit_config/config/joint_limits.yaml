@@ -12,19 +12,19 @@ joint_limits:
     has_velocity_limits: true
     max_velocity: 1.2
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 0.8
   shoulder_joint_1:
     has_velocity_limits: true
     max_velocity: 1.2
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 0.8
   shoulder_joint_2:
     has_velocity_limits: true
     max_velocity: 1.2
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 0.8
   shoulder_joint_3:
     has_velocity_limits: true
     max_velocity: 1.2
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 0.8

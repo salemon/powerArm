@@ -17,6 +17,10 @@
 
 #include <moveit/planning_interface/planning_interface.h>
 #include <moveit/planning_scene/planning_scene.h>
+// #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+
+// #include <yaml-cpp/yaml.h>
+// #include <fstream>
 
 // #include <moveit_visual_tools/moveit_visual_tools.h>
 
@@ -75,13 +79,13 @@ int main(int argc, char *argv[])
 	geometry_msgs::msg::Pose sample_left;
 
 	// left:
-	sample_left.orientation.x = 0;
-	sample_left.orientation.y = 0;
-	sample_left.orientation.z = -0.7047552466392517;
-	sample_left.orientation.w = 0.7094505429267883;
-	sample_left.position.x = 1.3014137744903564;
-	sample_left.position.y = -0.126162;
-	sample_left.position.z = 1.024908;
+	// sample_pose.orientation.x = -4.456e-05;
+	// sample_pose.orientation.y = -2.6453e-06;
+	// sample_pose.orientation.z = -0.70255;
+	// sample_pose.orientation.w = 0.71164;
+	sample_left.position.x = 1.304;
+	sample_left.position.y = -0.11213;
+	sample_left.position.z = 1.0248;
 	// target_poses.push_back(sample_pose);
 
 	// right:
@@ -116,9 +120,7 @@ int main(int argc, char *argv[])
 
 
 
-	// move_group.setPositionTarget(sample_left.position.x , sample_left.position.y, sample_left.position.z, "ee_link");
-	move_group.setPoseTarget(sample_left);
-
+	move_group.setPositionTarget(sample_left.position.x , sample_left.position.y, sample_left.position.z, "ee_link");
 	bool success = (move_group.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
 	if(success){
 		// for(std::size_t i = 0; i <  my_plan.trajectory_.joint_trajectory.points.size(); i++) {
@@ -130,16 +132,29 @@ int main(int argc, char *argv[])
 		move_group.execute(my_plan);
 	}
 
-	// std::cout << my_plan.trajectory_.joint_trajectory.points[0].velocities.size() << std::endl;
-	
-	// for(std::size_t i = 0; i <  my_plan.trajectory_.joint_trajectory.points.size(); i++) {
-	// 	for(std::size_t j = 0; j <  my_plan.trajectory_.joint_trajectory.points[i].velocities.size(); j++) {
-	// 		printf("%.5f\t",  my_plan.trajectory_.joint_trajectory.points[i].velocities[j]);
-	// 		}
-	// 	printf("\n");
-	// 	printf("time_from_start %u %u\n", my_plan.trajectory_.joint_trajectory.points[i].time_from_start.sec, my_plan.trajectory_.joint_trajectory.points[i].time_from_start.nanosec);
-	// }
+	// const Eigen::Isometry3d& current_tf = current_state->getGlobalLinkTransform("ee_link");
+	// geometry_msgs::msg::Pose current_pose = move_group.getCurrentPose("ee_link").pose;
+	// geometry_msgs::msg::Pose current_tf_pose;
 
+	// current_tf_pose.position.x = current_tf.translation().x();
+	// current_tf_pose.position.y = current_tf.translation().y();
+	// current_tf_pose.position.z = current_tf.translation().z();
+
+	// Eigen::Quaterniond q = (Eigen::Quaterniond)current_tf.linear();
+	// current_tf_pose.orientation.x = q.x();
+	// current_tf_pose.orientation.y = q.y();
+	// current_tf_pose.orientation.z = q.z();
+	// current_tf_pose.orientation.w = q.w();
+
+	// if(current_tf_pose.orientation.w < 0){
+	// 	current_tf_pose.orientation.x *= -1;
+	// 	current_tf_pose.orientation.y *= -1;
+	// 	current_tf_pose.orientation.z *= -1;
+	// 	current_tf_pose.orientation.w *= -1;
+	// }
+	
+	// RCLCPP_INFO_STREAM(LOGGER, "Current Pose from move group: \n" << geometry_msgs::msg::to_yaml(current_pose));
+	// RCLCPP_INFO_STREAM(LOGGER, "Current Pose from transformation matrix: \n" << geometry_msgs::msg::to_yaml(current_tf_pose));
 
 
 	// circular path segment
@@ -212,7 +227,7 @@ int main(int argc, char *argv[])
 			current_pose.orientation.w *= -1;
 		}
 		
-		// RCLCPP_INFO_STREAM(LOGGER, "Current Pose: \n" << geometry_msgs::msg::to_yaml(current_pose));
+		RCLCPP_INFO_STREAM(LOGGER, "Current Pose: \n" << geometry_msgs::msg::to_yaml(current_pose));
 		// RCLCPP_INFO(LOGGER, "Caculated dy: %.5f, dz: %.5f \n", dy, dz);
 
 		move_group.setStartState(*current_state);
@@ -246,26 +261,8 @@ int main(int argc, char *argv[])
 		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
 	}
 	
-	robot_trajectory::RobotTrajectory r_trajectory(move_group.getRobotModel(), PLANNING_GROUP);
-	r_trajectory.setRobotTrajectoryMsg(start_state, trajectory);
 
-	trajectory_processing::TimeOptimalTrajectoryGeneration totg(0.01, 0.1, 0.001);
-	totg.computeTimeStamps(r_trajectory, 0.1, 0.1);
-	
-	moveit_msgs::msg::RobotTrajectory trajectory_velocity_changed;
-	r_trajectory.getRobotTrajectoryMsg(trajectory_velocity_changed);
-
-	move_group.execute(trajectory_velocity_changed);
-
-	for(std::size_t i = 0; i <  trajectory_velocity_changed.joint_trajectory.points.size(); i++) {
-		for(std::size_t j = 0; j <  trajectory_velocity_changed.joint_trajectory.points[i].velocities.size(); j++) {
-			printf("%.5f\t", trajectory_velocity_changed.joint_trajectory.points[i].velocities[j]);
-		}
-		printf("\n");
-		printf("time_from_start %u %u\n", trajectory_velocity_changed.joint_trajectory.points[i].time_from_start.sec, trajectory_velocity_changed.joint_trajectory.points[i].time_from_start.nanosec);
-	}
-	
-	// move_group.execute(trajectory);
+	move_group.execute(trajectory);
 	// move_group.setStartState(start_state);
 	// move_group.setPositionTarget(sample_right.position.x, sample_right.position.y, sample_right.position.z, "ee_link");
 	// success = (move_group.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
@@ -287,14 +284,6 @@ int main(int argc, char *argv[])
 	msg.orientation.y = -2.6453e-06;
 	msg.orientation.z = -0.70255;
 	msg.orientation.w = 0.71164;
-
-	sample_left.orientation.x = 0;
-	sample_left.orientation.y = 0;
-	sample_left.orientation.z = -0.7047552466392517;
-	sample_left.orientation.w = 0.7094505429267883;
-	sample_left.position.x = 1.3014137744903564;
-	sample_left.position.y = -0.126162;
-	sample_left.position.z = 1.024908;
 
 	right:  
 	msg.position.x = 1.3043;
