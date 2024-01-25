@@ -19,6 +19,7 @@ powerarm_controller:
       - elbow_joint
     command_interfaces:
       - position
+      - velocity
     state_interfaces:
       - position
       - velocity

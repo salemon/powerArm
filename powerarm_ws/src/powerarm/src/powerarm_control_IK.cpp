@@ -1,4 +1,6 @@
 #include <vector>
+#include <fstream>
+#include <iostream>
 #include <pluginlib/class_loader.hpp>
 
 #include <rclcpp/rclcpp.hpp>
@@ -62,11 +64,11 @@ int main(int argc, char *argv[])
 	}
 
 	// initial jacobian
-	Eigen::Vector3d reference_point_position(0.0, 0.0, 0.0);
-	Eigen::MatrixXd jacobian;
-	current_state->getJacobian(joint_model_group, current_state->getLinkModel(joint_model_group->getLinkModelNames().back()),
-							reference_point_position, jacobian);
-	RCLCPP_INFO_STREAM(LOGGER, "Jacobian: \n" << jacobian << "\n");
+	// Eigen::Vector3d reference_point_position(0.0, 0.0, 0.0);
+	// Eigen::MatrixXd jacobian;
+	// current_state->getJacobian(joint_model_group, current_state->getLinkModel(joint_model_group->getLinkModelNames().back()),
+	// 						reference_point_position, jacobian);
+	// RCLCPP_INFO_STREAM(LOGGER, "Jacobian: \n" << jacobian << "\n");
 
 	move_group.setPlanningTime(10.0);
 
@@ -75,14 +77,23 @@ int main(int argc, char *argv[])
 	geometry_msgs::msg::Pose sample_left;
 
 	// left:
+	// sample_left.orientation.x = 0;
+	// sample_left.orientation.y = 0;
+	// sample_left.orientation.z = -0.7047552466392517;
+	// sample_left.orientation.w = 0.7094505429267883;
+	// sample_left.position.x = 1.3014137744903564;
+	// sample_left.position.y = -0.126162;
+	// sample_left.position.z = 1.024908;
+	// // target_poses.push_back(sample_pose);
+
+	sample_left.position.x = 1.2841;
+	sample_left.position.y = -0.15968;
+	sample_left.position.z = 1.0249;
 	sample_left.orientation.x = 0;
 	sample_left.orientation.y = 0;
-	sample_left.orientation.z = -0.7047552466392517;
-	sample_left.orientation.w = 0.7094505429267883;
-	sample_left.position.x = 1.3014137744903564;
-	sample_left.position.y = -0.126162;
-	sample_left.position.z = 1.024908;
-	// target_poses.push_back(sample_pose);
+	sample_left.orientation.z = -0.70607;
+	sample_left.orientation.w = 0.70814;
+
 
 	// right:
 	geometry_msgs::msg::Pose sample_right;
@@ -90,9 +101,13 @@ int main(int argc, char *argv[])
 	// sample_pose.orientation.y = -0.0021159;
 	// sample_pose.orientation.z = -0.61066;
 	// sample_pose.orientation.w = 0.79189;
-	sample_right.position.x = 1.304;
+	// sample_right.position.x = 1.304;
+	// sample_right.position.y = 0.16549;
+	// sample_right.position.z = 1.0248;
+
+	sample_right.position.x = 1.2835;
 	sample_right.position.y = 0.16549;
-	sample_right.position.z = 1.0248;
+	sample_right.position.z = 1.0249;
 
 	// up:
 	geometry_msgs::msg::Pose sample_up;
@@ -129,7 +144,8 @@ int main(int argc, char *argv[])
 		move_group.setStartState(*current_state);
 		move_group.execute(my_plan);
 	}
-
+	
+	RCLCPP_INFO(LOGGER, "Homing completed!");
 	// std::cout << my_plan.trajectory_.joint_trajectory.points[0].velocities.size() << std::endl;
 	
 	// for(std::size_t i = 0; i <  my_plan.trajectory_.joint_trajectory.points.size(); i++) {
@@ -157,12 +173,12 @@ int main(int argc, char *argv[])
 		RCLCPP_INFO(LOGGER, "Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
 	}
 
-	float r = (sample_right.position.y - sample_left.position.y - 0.05) / 2.0;
+	float r = (sample_right.position.y - sample_left.position.y) / 2.0; //-0.05
 	// float dy;
 	// float dz;
 	// float dt = 0.1;
 
-	int num_samples = 16;
+	int num_samples = 64;
 	// double dy = (sample_right.position.y - sample_left.position.y) / num_samples;
 	// RCLCPP_INFO(LOGGER, "step size %f", dy);
 
@@ -225,7 +241,7 @@ int main(int argc, char *argv[])
 
 	moveit_msgs::msg::RobotTrajectory trajectory;
 	const double jump_threshold = 0.0;
-	const double eef_step = 0.05;
+	const double eef_step = 0.01;
 	double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
 	RCLCPP_INFO(LOGGER, "Visualizing circle plan (Cartesian path) (%.2f%% achieved)", fraction * 100.0);
 	
@@ -250,20 +266,20 @@ int main(int argc, char *argv[])
 	r_trajectory.setRobotTrajectoryMsg(start_state, trajectory);
 
 	trajectory_processing::TimeOptimalTrajectoryGeneration totg(0.01, 0.1, 0.001);
-	totg.computeTimeStamps(r_trajectory, 0.1, 0.1);
+	totg.computeTimeStamps(r_trajectory, 1, 1);
 	
 	moveit_msgs::msg::RobotTrajectory trajectory_velocity_changed;
 	r_trajectory.getRobotTrajectoryMsg(trajectory_velocity_changed);
 
 	move_group.execute(trajectory_velocity_changed);
 
-	for(std::size_t i = 0; i <  trajectory_velocity_changed.joint_trajectory.points.size(); i++) {
-		for(std::size_t j = 0; j <  trajectory_velocity_changed.joint_trajectory.points[i].velocities.size(); j++) {
-			printf("%.5f\t", trajectory_velocity_changed.joint_trajectory.points[i].velocities[j]);
-		}
-		printf("\n");
-		printf("time_from_start %u %u\n", trajectory_velocity_changed.joint_trajectory.points[i].time_from_start.sec, trajectory_velocity_changed.joint_trajectory.points[i].time_from_start.nanosec);
-	}
+	// for(std::size_t i = 0; i <  trajectory_velocity_changed.joint_trajectory.points.size(); i++) {
+	// 	for(std::size_t j = 0; j <  trajectory_velocity_changed.joint_trajectory.points[i].velocities.size(); j++) {
+	// 		printf("%.5f\t", trajectory_velocity_changed.joint_trajectory.points[i].velocities[j]);
+	// 	}
+	// 	printf("\n");
+	// 	printf("time_from_start %u %u\n", trajectory_velocity_changed.joint_trajectory.points[i].time_from_start.sec, trajectory_velocity_changed.joint_trajectory.points[i].time_from_start.nanosec);
+	// }
 	
 	// move_group.execute(trajectory);
 	// move_group.setStartState(start_state);
@@ -274,6 +290,45 @@ int main(int argc, char *argv[])
 	// }
 
 	// move_group.execute(my_plan);
+
+	std::stringstream ss;
+
+    for (unsigned i=0; i< trajectory_velocity_changed.joint_trajectory.points.size(); i++)
+    {
+		
+		ss
+			<< trajectory_velocity_changed.joint_trajectory.points[i].positions[0] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].positions[1] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].positions[2] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].positions[3] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].velocities[0] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].velocities[1] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].velocities[2] << "," 
+			<< trajectory_velocity_changed.joint_trajectory.points[i].velocities[3] << "," 
+
+		<< std::endl;
+
+		if(i == (trajectory_velocity_changed.joint_trajectory.points.size()-1))
+		{
+			std::ofstream outfile ("/home/wenda/powerarm_ws/points.txt",std::ios::out);
+			if(!outfile.is_open())
+			{
+				RCLCPP_INFO(LOGGER, "open failed");
+			}
+			else
+			{
+				outfile << "There are a total of " << i + 1 << " points in the trajectory" <<std::endl; //<<count<<std::endl;
+				//outfile<<finger_state[i][0]<<","<<finger_state[i][1]<<","<<finger_state[i][2]<<std::endl;
+				//multi_dof_joint_trajectory.joint_names[0]<<std::endl;
+				outfile << ss.str() <<std::endl;
+				outfile.close();
+				
+				RCLCPP_INFO(LOGGER, "File created");
+			}
+		}
+    }
+
+	RCLCPP_INFO(LOGGER, "Completed");
 
 	rclcpp::shutdown();
 	return 0;

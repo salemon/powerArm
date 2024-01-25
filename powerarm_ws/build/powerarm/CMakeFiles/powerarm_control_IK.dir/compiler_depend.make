@@ -50,47 +50,20 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -99,10 +72,30 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
   /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
@@ -110,8 +103,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -136,29 +127,12 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/bits/string_view.tcc \
@@ -199,6 +173,61 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/iostream \
+  /opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
   /opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp \
   /usr/include/c++/11/cstddef \
   /usr/include/console_bridge/console.h \
@@ -225,9 +254,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
   /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp \
@@ -269,26 +295,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/sstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/locale_facets.h \
-  /usr/include/c++/11/cwctype \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
-  /usr/include/c++/11/bits/locale_facets.tcc \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/ostream.tcc \
-  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_prefix.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
@@ -321,7 +327,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/stack \
@@ -387,7 +392,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
-  /usr/include/c++/11/iostream \
   /opt/ros/humble/include/rcl/rcl/guard_condition.h \
   /opt/ros/humble/include/rcl/rcl/allocator.h \
   /opt/ros/humble/include/rcl/rcl/context.h \
@@ -1766,13 +1770,15 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+/opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.h:
 
-/opt/ros/humble/include/rcl_action/rcl_action/visibility_control.h:
+/opt/ros/humble/include/moveit/transforms/transforms.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
+/opt/ros/humble/include/moveit/collision_detection/collision_matrix.h:
 
-/usr/include/boost/preprocessor/logical/bitand.hpp:
+/opt/ros/humble/include/moveit/robot_state/attached_body.h:
+
+/opt/ros/humble/include/moveit/robot_model/revolute_joint_model.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
@@ -1886,8 +1892,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/eigen3/Eigen/src/Core/Transpose.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
 /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.h:
 
 /usr/include/boost/type_traits/is_const.hpp:
@@ -1899,8 +1903,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/c++/11/condition_variable:
-
-/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
 /usr/include/c++/11/bits/regex.tcc:
 
@@ -1960,9 +1962,9 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /opt/ros/humble/include/rcl/rcl/client.h:
 
-/usr/include/c++/11/bits/locale_facets.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
 
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
 
@@ -1999,12 +2001,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /usr/include/c++/11/bits/list.tcc:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/workspace_parameters__struct.hpp:
-
-/opt/ros/humble/include/rmw/rmw/types.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
@@ -2216,44 +2212,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_prefix.hpp:
 
-/usr/include/c++/11/bits/regex_scanner.h:
-
-/usr/include/c++/11/clocale:
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/link_padding__traits.hpp:
-
-/usr/include/c++/11/ostream:
-
-/usr/include/eigen3/Eigen/src/Core/Stride.h:
-
-/opt/ros/humble/include/rcl/rcl/log_level.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
-
-/opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
-
-/usr/include/c++/11/cwctype:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/usr/include/c++/11/streambuf:
-
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/boost/integer/integer_log2.hpp:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
-
-/usr/include/c++/11/istream:
-
 /usr/include/c++/11/sstream:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
@@ -2274,7 +2232,71 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/boost/random/uniform_int_distribution.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/opt/ros/humble/include/pluginlib/pluginlib/exceptions.hpp:
+
 /opt/ros/humble/include/pluginlib/pluginlib/class_loader_base.hpp:
+
+/opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/motion_plan_detailed_response.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__struct.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
+
+/opt/ros/humble/include/rcutils/rcutils/macros.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
+
+/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/opt/ros/humble/include/rmw/rmw/ret_types.h:
+
+/opt/ros/humble/include/rmw/rmw/macros.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
+
+/usr/include/c++/11/bits/locale_classes.h:
+
+/opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/boost/mpl/bool.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Visitor.h:
+
+/usr/include/eigen3/Eigen/src/Core/Assign.h:
+
+/opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
+
+/usr/include/boost/random/detail/config.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/link_scale.hpp:
 
@@ -2290,13 +2312,19 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/bits/stl_pair.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/time.h:
 
-/usr/include/eigen3/Eigen/src/Core/Dot.h:
+/usr/include/pthread.h:
 
-/usr/include/c++/11/bits/unordered_map.h:
+/usr/include/c++/11/ext/concurrence.h:
 
-/usr/include/boost/type_traits/is_arithmetic.hpp:
+/usr/include/boost/type_traits/is_same.hpp:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/include/boost/integer/integer_log2.hpp:
+
+/usr/include/c++/11/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -2312,28 +2340,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/sched.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/11/ext/concurrence.h:
-
-/usr/include/boost/type_traits/is_same.hpp:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
-
-/usr/include/boost/random/detail/config.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Assign.h:
-
-/usr/include/eigen3/Eigen/src/Core/Visitor.h:
-
 /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
@@ -2342,131 +2348,39 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/display_robot_state__builder.hpp:
-
-/usr/include/c++/11/bits/basic_string.h:
-
 /usr/include/boost/type_traits/is_unsigned.hpp:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
-/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resource.hpp:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/display_robot_state__builder.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
-
-/opt/ros/humble/include/rcl/rcl/publisher.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/opt/ros/humble/include/rcl/rcl/node_options.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/11/system_error:
-
-/opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/motion_plan_detailed_response.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
-
-/opt/ros/humble/include/rmw/rmw/event.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__struct.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__builder.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
-
-/usr/include/c++/11/math.h:
-
-/usr/include/c++/11/unordered_set:
-
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/boost/random/uniform_real_distribution.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/generic_trajectory__traits.hpp:
-
-/usr/include/c++/11/bits/node_handle.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
-/opt/ros/humble/include/urdfdom_headers/urdf_model/color.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+/usr/include/c++/11/bits/basic_string.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.h:
 
 /usr/include/locale.h:
 
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/display_trajectory.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
-
-/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
-
-/opt/ros/humble/include/rcutils/rcutils/qsort.h:
-
-/opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
-
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/11/bits/postypes.h:
+/usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/regex:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
+
+/opt/ros/humble/include/rcutils/rcutils/shared_library.h:
+
+/usr/include/c++/11/cctype:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory__traits.hpp:
+
+/usr/include/c++/11/unordered_map:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/joint_limits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -2482,9 +2396,87 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/errno.h:
 
+/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:
+
+/usr/include/c++/11/csignal:
+
+/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/boost/type_traits/is_arithmetic.hpp:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/eigen3/Eigen/src/Core/Dot.h:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+
+/usr/include/c++/11/exception:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resource.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
+
+/opt/ros/humble/include/rcl/rcl/publisher.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/opt/ros/humble/include/rcl/rcl/node_options.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/11/system_error:
+
+/opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/c++/11/unordered_set:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/unistd.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/usr/include/boost/exception/exception.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory_point__struct.hpp:
+
+/usr/include/c++/11/bits/regex_scanner.tcc:
+
+/usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/cstring:
 
@@ -2502,51 +2494,41 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/boost/assert.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+/usr/include/c++/11/bits/stl_tempbuf.h:
 
-/usr/include/unistd.h:
+/opt/ros/humble/include/moveit/robot_model/planar_joint_model.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/boost/exception/exception.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory_point__struct.hpp:
+/usr/include/c++/11/bits/std_mutex.h:
 
-/usr/include/c++/11/bits/regex_scanner.tcc:
+/opt/ros/humble/include/urdfdom_headers/urdf_model/color.h:
 
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/c++/11/bits/exception_ptr.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/constraints__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/c++/11/bits/exception_ptr.h:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
 /usr/include/math.h:
 
-/usr/include/c++/11/typeinfo:
+/usr/include/c++/11/bits/regex_automaton.tcc:
 
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
+/usr/include/c++/11/variant:
 
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/11/bits/streambuf_iterator.h:
-
-/opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp:
+/usr/include/boost/integer/integer_mask.hpp:
 
 /usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/c++/11/csignal:
-
-/home/wenda/powerarm_ws/src/powerarm/src/powerarm_control_IK.cpp:
-
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
-
 /usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/strings.h:
 
@@ -2558,19 +2540,7 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/bits/exception_defines.h:
 
-/opt/ros/humble/include/rcutils/rcutils/macros.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+/usr/include/c++/11/vector:
 
 /usr/include/boost/mpl/aux_/config/integral.hpp:
 
@@ -2578,7 +2548,21 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
 
-/usr/include/c++/11/vector:
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__traits.hpp:
 
@@ -2590,15 +2574,21 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/c++/11/bits/unique_ptr.h:
+/usr/include/boost/mpl/limits/arity.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+/usr/include/c++/11/bits/sstream.tcc:
 
-/usr/include/boost/random/detail/ptr_helper.hpp:
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
 
-/opt/ros/humble/include/tracetools/tracetools/config.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
 
-/usr/include/c++/11/debug/assertions.h:
+/usr/include/c++/11/climits:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/bounding_volume__struct.hpp:
+
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -2606,53 +2596,53 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
 
-/usr/include/boost/mpl/limits/arity.hpp:
+/usr/include/c++/11/debug/assertions.h:
 
-/usr/include/c++/11/bits/sstream.tcc:
+/opt/ros/humble/include/tracetools/tracetools/config.h:
 
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
+/opt/ros/humble/include/moveit/planning_interface/planning_response.h:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/bounding_volume__struct.hpp:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/c++/11/new:
+/usr/include/eigen3/Eigen/src/Core/Ref.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
+/usr/include/c++/11/bits/stl_tree.h:
 
-/usr/include/c++/11/climits:
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
-/usr/include/c++/11/bits/stl_function.h:
+/usr/include/boost/random/detail/ptr_helper.hpp:
 
-/usr/include/c++/11/bits/stl_multimap.h:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
-/usr/include/features.h:
+/usr/include/c++/11/streambuf:
+
+/usr/include/c++/11/fstream:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__traits.hpp:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__builder.hpp:
 
-/usr/include/c++/11/bits/stl_construct.h:
+/usr/include/c++/11/math.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
-/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:
+/usr/include/features.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+/opt/ros/humble/include/rcl/rcl/graph.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
-
-/usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resources.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+/usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -2670,6 +2660,16 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/11/functional:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory__traits.hpp:
@@ -2677,6 +2677,46 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
 
 /usr/include/c++/11/debug/debug.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/display_trajectory.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/usr/include/c++/11/bits/invoke.h:
+
+/opt/ros/humble/include/rcutils/rcutils/qsort.h:
+
+/opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
+
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/position_constraint__struct.hpp:
+
+/usr/include/boost/preprocessor/control/expr_iif.hpp:
+
+/usr/include/eigen3/Eigen/Cholesky:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/typeindex:
 
@@ -2690,43 +2730,7 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/boost/mpl/aux_/arity.hpp:
 
-/usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/opt/ros/humble/include/moveit/planning_interface/planning_response.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/eigen3/Eigen/src/Core/Ref.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/opt/ros/humble/include/moveit/robot_model/planar_joint_model.h:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/position_constraint__struct.hpp:
-
-/usr/include/eigen3/Eigen/Cholesky:
-
-/usr/include/boost/preprocessor/control/expr_iif.hpp:
-
 /usr/include/c++/11/bits/functional_hash.h:
-
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/time.h:
 
@@ -2738,19 +2742,15 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp:
 
 /usr/include/libintl.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__traits.hpp:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/include/c++/11/locale:
 
 /usr/include/c++/11/bits/std_thread.h:
 
@@ -2769,6 +2769,16 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /usr/include/boost/preprocessor/control/if.hpp:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
+
+/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
+
+/opt/ros/humble/include/moveit/robot_model/prismatic_joint_model.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
+
+/opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
+/usr/include/c++/11/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -2790,22 +2800,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_entry__traits.hpp:
-
-/opt/ros/humble/include/urdfdom_headers/urdf_model/model.h:
-
-/usr/include/c++/11/bits/locale_facets.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
-
 /usr/include/c++/11/iterator:
 
 /usr/include/boost/config/detail/posix_features.hpp:
@@ -2820,17 +2814,11 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/cstddef:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__traits.hpp:
+/usr/include/c++/11/typeinfo:
 
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
 
-/usr/include/c++/11/backward/binders.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
-
-/usr/include/c++/11/initializer_list:
-
-/usr/include/c++/11/iosfwd:
+/usr/include/c++/11/istream:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
@@ -2850,117 +2838,49 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/ctime:
 
-/usr/include/c++/11/bits/erase_if.h:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
 
-/usr/include/stdint.h:
+/usr/include/c++/11/initializer_list:
 
-/usr/include/c++/11/bits/ptr_traits.h:
+/usr/include/c++/11/iosfwd:
 
-/usr/include/time.h:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
-/opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__traits.hpp:
+/usr/include/c++/11/bits/stl_function.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+/usr/include/c++/11/backward/binders.h:
 
-/usr/include/boost/mpl/bool.hpp:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/generic_trajectory__traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/c++/11/bits/node_handle.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/include/c++/11/bits/invoke.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
-
-/usr/include/c++/11/exception:
-
-/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
-
-/opt/ros/humble/include/rcl/rcl/graph.h:
-
-/usr/include/c++/11/bits/regex_automaton.tcc:
-
-/usr/include/c++/11/variant:
-
-/usr/include/boost/integer/integer_mask.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
-
-/opt/ros/humble/include/moveit/robot_model/prismatic_joint_model.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
-
-/opt/ros/humble/include/rmw/rmw/publisher_options.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/c++/11/functional:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+/usr/include/c++/11/iostream:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/boost/random/uniform_int_distribution.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory__traits.hpp:
-
-/usr/include/c++/11/unordered_map:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/joint_limits.hpp:
-
-/usr/include/c++/11/locale:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
-
-/usr/include/ctype.h:
+/usr/include/boost/random/uniform_real_distribution.hpp:
 
 /opt/ros/humble/include/moveit/robot_model_loader/robot_model_loader.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
+/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -2990,6 +2910,24 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/11/bits/shared_ptr.h:
+
+/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resources.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__traits.hpp:
 
 /usr/include/c++/11/cwchar:
@@ -3014,17 +2952,19 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/boost/random/detail/generator_bits.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /opt/ros/humble/include/urdf/urdf/urdfdom_compatibility.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/11/cwctype:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
 
@@ -3038,11 +2978,15 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/bits/regex_constants.h:
 
-/opt/ros/humble/include/moveit/utils/moveit_error_code.h:
-
-/usr/include/string.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
+
+/opt/ros/humble/include/rmw/rmw/event.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /opt/ros/humble/include/rcl/rcl/arguments.h:
 
@@ -3063,6 +3007,18 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/sched.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -3088,21 +3044,125 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
+/usr/include/c++/11/utility:
+
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/stdexcept:
 
+/opt/ros/humble/include/moveit/utils/moveit_error_code.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+
+/opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp:
+
+/opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_entry__traits.hpp:
+
+/opt/ros/humble/include/urdfdom_headers/urdf_model/model.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/11/bits/exception.h:
+
+/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
+
+/usr/include/c++/11/bits/locale_facets.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp:
+
+/usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/eigen3/Eigen/src/Core/Stride.h:
+
+/opt/ros/humble/include/rcl/rcl/log_level.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/link_padding__traits.hpp:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/c++/11/bits/regex_scanner.h:
+
+/usr/include/c++/11/clocale:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/workspace_parameters__struct.hpp:
+
+/opt/ros/humble/include/rmw/rmw/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
+/usr/include/c++/11/bits/regex_compiler.tcc:
+
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/usr/include/c++/11/cstdint:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
+
+/usr/include/c++/11/iomanip:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
 /usr/include/boost/preprocessor/arithmetic/inc.hpp:
 
 /usr/include/console_bridge_export.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
 
 /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
 /usr/include/c++/11/bits/stl_algo.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+
+/usr/include/c++/11/cassert:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
@@ -3115,6 +3175,10 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/robot_trajectory.hpp:
 
 /usr/include/c++/11/bits/stl_heap.h:
+
+/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:
+
+/usr/include/c++/11/bits/hashtable.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/execute_trajectory.hpp:
 
@@ -3134,11 +3198,19 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/boost/preprocessor/control/iif.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_detailed_response__traits.hpp:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/boost/random/detail/integer_log2.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/c++/11/limits:
-
-/usr/include/c++/11/utility:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp:
 
@@ -3156,75 +3228,27 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/boost/config/detail/select_platform_config.hpp:
 
-/usr/include/c++/11/bits/hashtable.h:
+/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
-/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:
+/usr/include/ctype.h:
 
-/opt/ros/humble/include/rmw/rmw/ret_types.h:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
-/usr/include/c++/11/cassert:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
-
-/opt/ros/humble/include/rmw/rmw/macros.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/iomanip:
-
-/usr/include/c++/11/cctype:
-
-/opt/ros/humble/include/rcutils/rcutils/shared_library.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp:
-
-/opt/ros/humble/include/pluginlib/pluginlib/exceptions.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_detailed_response__traits.hpp:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/boost/random/detail/integer_log2.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
-
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
-
-/usr/include/c++/11/bits/regex_compiler.tcc:
-
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/include/c++/11/bits/stl_relops.h:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_response__struct.hpp:
 
+/usr/include/limits.h:
+
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
-/usr/include/limits.h:
+/opt/ros/humble/include/rcl_action/rcl_action/visibility_control.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
+
+/usr/include/boost/preprocessor/logical/bitand.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp:
 
@@ -3714,6 +3738,8 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/move_it_error_codes__builder.hpp:
 
+/usr/include/c++/11/bits/fstream.tcc:
+
 /usr/include/boost/type_traits/is_floating_point.hpp:
 
 /usr/include/boost/mpl/aux_/config/adl.hpp:
@@ -3756,9 +3782,9 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
 
-/usr/include/boost/type_traits/detail/config.hpp:
-
 /usr/include/boost/random/detail/int_float_pair.hpp:
+
+/usr/include/boost/type_traits/detail/config.hpp:
 
 /usr/include/boost/type_traits/is_enum.hpp:
 
@@ -3968,8 +3994,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
 
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
-
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
@@ -4051,8 +4075,6 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
 /usr/include/c++/11/bits/refwrap.h:
 
@@ -4231,13 +4253,3 @@ CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.o: /home/wenda/po
 /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:
 
 /opt/ros/humble/include/moveit/robot_model/floating_joint_model.h:
-
-/opt/ros/humble/include/moveit/robot_model/revolute_joint_model.h:
-
-/opt/ros/humble/include/moveit/collision_detection/collision_matrix.h:
-
-/opt/ros/humble/include/moveit/robot_state/attached_body.h:
-
-/opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.h:
-
-/opt/ros/humble/include/moveit/transforms/transforms.h:
