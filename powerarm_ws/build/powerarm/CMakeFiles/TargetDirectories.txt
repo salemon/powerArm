@@ -1,6 +1,7 @@
 /home/wenda/powerarm_ws/build/powerarm/CMakeFiles/uninstall.dir
 /home/wenda/powerarm_ws/build/powerarm/CMakeFiles/powerarm_uninstall.dir
 /home/wenda/powerarm_ws/build/powerarm/CMakeFiles/powerarm_control_IK.dir
+/home/wenda/powerarm_ws/build/powerarm/CMakeFiles/powerarm_control_bernoulli.dir
 /home/wenda/powerarm_ws/build/powerarm/CMakeFiles/test.dir
 /home/wenda/powerarm_ws/build/powerarm/CMakeFiles/edit_cache.dir
 /home/wenda/powerarm_ws/build/powerarm/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,6 @@
 /home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_control_IK
+/home/wenda/powerarm_ws/install/powerarm/lib/powerarm/powerarm_control_bernoulli
+/home/wenda/powerarm_ws/install/powerarm/share/powerarm/launch/powerarm_control_bernoulli.py
 /home/wenda/powerarm_ws/install/powerarm/share/powerarm/launch/powerarm_control_IK.launch.py
 /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/package_run_dependencies/powerarm
 /home/wenda/powerarm_ws/install/powerarm/share/ament_index/resource_index/parent_prefix_path/powerarm

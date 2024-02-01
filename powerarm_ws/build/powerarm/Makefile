@@ -210,6 +210,19 @@ powerarm_control_IK/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/powerarm_control_IK.dir/build.make CMakeFiles/powerarm_control_IK.dir/build
 .PHONY : powerarm_control_IK/fast
 
+#=============================================================================
+# Target rules for targets named powerarm_control_bernoulli
+
+# Build rule for target.
+powerarm_control_bernoulli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 powerarm_control_bernoulli
+.PHONY : powerarm_control_bernoulli
+
+# fast build rule for target.
+powerarm_control_bernoulli/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/powerarm_control_bernoulli.dir/build.make CMakeFiles/powerarm_control_bernoulli.dir/build
+.PHONY : powerarm_control_bernoulli/fast
+
 src/powerarm_control_IK.o: src/powerarm_control_IK.cpp.o
 .PHONY : src/powerarm_control_IK.o
 
@@ -234,6 +247,30 @@ src/powerarm_control_IK.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/powerarm_control_IK.dir/build.make CMakeFiles/powerarm_control_IK.dir/src/powerarm_control_IK.cpp.s
 .PHONY : src/powerarm_control_IK.cpp.s
 
+src/powerarm_control_bernoulli.o: src/powerarm_control_bernoulli.cpp.o
+.PHONY : src/powerarm_control_bernoulli.o
+
+# target to build an object file
+src/powerarm_control_bernoulli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/powerarm_control_bernoulli.dir/build.make CMakeFiles/powerarm_control_bernoulli.dir/src/powerarm_control_bernoulli.cpp.o
+.PHONY : src/powerarm_control_bernoulli.cpp.o
+
+src/powerarm_control_bernoulli.i: src/powerarm_control_bernoulli.cpp.i
+.PHONY : src/powerarm_control_bernoulli.i
+
+# target to preprocess a source file
+src/powerarm_control_bernoulli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/powerarm_control_bernoulli.dir/build.make CMakeFiles/powerarm_control_bernoulli.dir/src/powerarm_control_bernoulli.cpp.i
+.PHONY : src/powerarm_control_bernoulli.cpp.i
+
+src/powerarm_control_bernoulli.s: src/powerarm_control_bernoulli.cpp.s
+.PHONY : src/powerarm_control_bernoulli.s
+
+# target to generate assembly for a file
+src/powerarm_control_bernoulli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/powerarm_control_bernoulli.dir/build.make CMakeFiles/powerarm_control_bernoulli.dir/src/powerarm_control_bernoulli.cpp.s
+.PHONY : src/powerarm_control_bernoulli.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... powerarm_uninstall"
 	@echo "... uninstall"
 	@echo "... powerarm_control_IK"
+	@echo "... powerarm_control_bernoulli"
 	@echo "... src/powerarm_control_IK.o"
 	@echo "... src/powerarm_control_IK.i"
 	@echo "... src/powerarm_control_IK.s"
+	@echo "... src/powerarm_control_bernoulli.o"
+	@echo "... src/powerarm_control_bernoulli.i"
+	@echo "... src/powerarm_control_bernoulli.s"
 .PHONY : help
 
 

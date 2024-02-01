@@ -49,7 +49,23 @@ ament_target_dependencies(
   "rclcpp"
 )
 
+add_executable(powerarm_control_bernoulli src/powerarm_control_bernoulli.cpp)
+target_include_directories(powerarm_control_bernoulli PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+
+target_link_libraries(powerarm_control_bernoulli yaml-cpp)
+
+target_compile_features(powerarm_control_bernoulli PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(
+  powerarm_control_bernoulli
+  "moveit_ros_planning_interface"
+  "moveit_visual_tools"
+  "rclcpp"
+)
+
 install(TARGETS powerarm_control_IK
+  powerarm_control_bernoulli
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY launch

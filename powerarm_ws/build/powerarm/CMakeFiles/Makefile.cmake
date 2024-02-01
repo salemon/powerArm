@@ -1524,4 +1524,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/powerarm_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/powerarm_control_IK.dir/DependInfo.cmake"
+  "CMakeFiles/powerarm_control_bernoulli.dir/DependInfo.cmake"
   )
