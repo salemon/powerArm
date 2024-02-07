@@ -1,0 +1,3 @@
+source install/setup.bash
+ros2 launch powerarm_moveit_config demo.launch.py 
+ros2 launch powerarm powerarm_control_IK.launch.py

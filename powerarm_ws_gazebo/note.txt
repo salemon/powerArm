@@ -1,0 +1,2 @@
+rviz only: comment {'use_sim_time':True}
+command_interfaces: uncomment -velocity
