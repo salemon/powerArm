@@ -47,7 +47,9 @@ def deg2enc(value, motor_num):
 def torq2curr(value, motor_num):
     return value * TorqConst[motor_num]
 
-file = open('circle_points.txt','r')
+# file = open('circle_points.txt','r')
+file = open('opt_circle_points.txt','r')
+
 traj_pos = []
 traj_vel = []
 q_vel_list = []

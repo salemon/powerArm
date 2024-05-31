@@ -1,7 +1,17 @@
 import numpy as np
+import serial
+from scipy.spatial import KDTree
 
 CPR = 3600
 GR = [26.3, 26.3, 42.6*3, 42.6]
+
+raw_q = np.array([0.0, 0.0, 0.0, 0.0])
+raw_tau = np.array([0.0, 0.0, 0.0, 0.0])
+raw_q_dot = np.array([0.0, 0.0, 0.0, 0.0])
+raw_tau = np.array([0.0, 0.0, 0.0, 0.0])
+
+encOffset = [157, -270, 11000, -9300]  ## 4. 115020 -- 105720
+tauOffset = [1.5, 0, 0,0.16] 
 
 def to_char(value):
     chr_val = str(abs(value))
@@ -36,9 +46,35 @@ def gravity(q):
 
     return tau
 
-def load_data(file_name):
-    data = np.load(file_name)
-    q_pos = data['q_pos']
-    q_vel = data['q_vel']
-    q_tau = data['q_tau']
-    wrenchOffset = data['wrenchOffset']
+def read_data(ser):
+    '''
+    Raw data from sensors. Wrench in Sim coordinate.
+    '''
+    line = ser.readline()
+    data = line.decode("utf-8")
+    data_ls = data.split(",")
+
+
+    fx = int(data_ls[0])/100.0
+    fy = int(data_ls[1])/100.0
+    fz = int(data_ls[2])/100.0
+
+    tx = int(data_ls[3])/1000.0
+    ty = int(data_ls[4])/1000.0
+    tz = int(data_ls[5])/1000.0
+
+    for i in range(6, 10):
+        axis_d = data_ls[i].split(" ")
+        raw_q[i - 6] = enc2deg(int(axis_d[0]) - encOffset[i - 6], i - 6)
+        raw_q_dot[i - 6] = rpm2rad(int(axis_d[1]), i - 6)
+        raw_tau[i - 6] = axis_d[2]
+
+    wrench = np.array([-fy, fx, fz, -ty, tx, tz])
+
+    return wrench, raw_q, raw_q_dot, raw_tau
+
+
+def build_KDTree(data):
+    tree = KDTree(data)
+
+    return tree
