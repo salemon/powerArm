@@ -39,7 +39,8 @@ sudo apt update
 # Install ROS2 and core dependencies
 sudo apt install ros-humble-desktop-full
 sudo apt install ros-humble-moveit
-
+# Install Gazebo simulator
+sudo apt install gazebo
 # Install additional required packages
 sudo apt install ros-humble-moveit-common
 sudo apt install ros-humble-graph-msgs
