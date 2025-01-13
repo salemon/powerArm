@@ -1,6 +1,6 @@
 # powerArm
 
-A ROS2-based robotic arm control and simulation project utilizing MoveIt2 for motion planning and control.
+A ROS2-based exoskelenton arm control and simulation project utilizing MoveIt2 for motion planning and control.
 
 ## Environment Prerequisites
 
