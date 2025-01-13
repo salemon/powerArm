@@ -44,7 +44,13 @@ sudo apt install ros-humble-moveit
 sudo apt install ros-humble-moveit-common
 sudo apt install ros-humble-graph-msgs
 sudo apt install ros-humble-visualization-msgs ros-humble-rviz-visual-tools
-### 2.build 
+```
+
+### 2. Building Workspaces
+
+Build each workspace in sequence:
+
+```bash
 # Build main workspace
 cd ~/powerArm/powerarm_ws
 colcon build --symlink-install
@@ -59,6 +65,8 @@ source install/setup.bash
 cd ../powerarm_ws_gazebo
 colcon build --symlink-install
 source install/setup.bash
+```
+
 ## Usage
 
 ### Setting Up the Environment
@@ -69,7 +77,6 @@ Before using the robot, ensure proper environment setup:
 # Source ROS2 base installation
 source /opt/ros/humble/setup.bash
 
-# Source the workspaces based on your needs:
 # For simulation:
 source ~/powerArm/powerarm_ws/install/setup.bash
 source ~/powerArm/powerarm_ws_gazebo/install/setup.bash
@@ -77,20 +84,37 @@ source ~/powerArm/powerarm_ws_gazebo/install/setup.bash
 # For real robot control:
 source ~/powerArm/powerarm_ws/install/setup.bash
 source ~/powerArm/powerArm_control_ws/install/setup.bash
+```
 
+## Troubleshooting
 
-## trouble shooting
+### Common Issues
+
+#### Build Errors
+
+If you encounter build errors:
+
+```bash
 # Clean build artifacts
 rm -rf build/ install/ log/
 
 # Rebuild with clean cache
 colcon build --symlink-install --cmake-clean-cache
+```
 
-#missing
+#### Missing Dependencies
 
+Install missing packages:
+
+```bash
 sudo apt update
 sudo apt install ros-humble-moveit-common
 sudo apt install ros-humble-graph-msgs
-Ensure all workspaces are sourced in the correct order
-Verify package dependencies are properly installed
-Check for CMake configuration errors in the build logs
+```
+
+#### General Tips
+
+- Ensure all workspaces are sourced in the correct order
+- Verify package dependencies are properly installed
+- Check for CMake configuration errors in the build logs
+```
