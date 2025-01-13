@@ -1,0 +1,1 @@
+/home/bobhu/src/powerArm/powerarm_ws_gazebo/build/moveit_visual_tools/ament_cmake_environment_hooks/local_setup.sh

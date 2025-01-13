@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-caa55ec8730d9d270e85.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "powerarm",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "powerarm_control_IK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-powerarm_control_IK-f092714e51dd2c7c34c8.json",
+					"name" : "powerarm_control_IK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "powerarm_control_bernoulli::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-powerarm_control_bernoulli-1afcd985f49a84f879e5.json",
+					"name" : "powerarm_control_bernoulli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "powerarm_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-powerarm_uninstall-457f493db82c3b92313d.json",
+					"name" : "powerarm_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-995817f67f5924e9724c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bobhu/src/powerArm/powerarm_ws_gazebo/build/powerarm",
+		"source" : "/home/bobhu/src/powerArm/powerarm_ws_gazebo/src/powerarm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

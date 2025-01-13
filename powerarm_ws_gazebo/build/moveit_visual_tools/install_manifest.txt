@@ -1,0 +1,3 @@
+/home/bobhu/src/powerArm/powerarm_ws_gazebo/install/moveit_visual_tools/lib/libmoveit_visual_tools.so
+/home/bobhu/src/powerArm/powerarm_ws_gazebo/install/moveit_visual_tools/share/moveit_visual_tools/cmake/export_moveit_visual_toolsExport.cmake
+/home/bobhu/src/powerArm/powerarm_ws_gazebo/install/moveit_visual_tools/share/moveit_visual_tools/cmake/export_moveit_visual_toolsExport-release.cmake

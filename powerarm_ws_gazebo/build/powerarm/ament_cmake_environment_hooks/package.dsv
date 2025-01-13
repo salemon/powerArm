@@ -1,0 +1,4 @@
+source;share/powerarm/local_setup.bash
+source;share/powerarm/local_setup.dsv
+source;share/powerarm/local_setup.sh
+source;share/powerarm/local_setup.zsh

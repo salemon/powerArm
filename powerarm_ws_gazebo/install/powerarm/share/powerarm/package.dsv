@@ -1,0 +1,8 @@
+source;share/powerarm/hook/cmake_prefix_path.ps1
+source;share/powerarm/hook/cmake_prefix_path.dsv
+source;share/powerarm/hook/cmake_prefix_path.sh
+source;share/powerarm/local_setup.bash
+source;share/powerarm/local_setup.dsv
+source;share/powerarm/local_setup.ps1
+source;share/powerarm/local_setup.sh
+source;share/powerarm/local_setup.zsh

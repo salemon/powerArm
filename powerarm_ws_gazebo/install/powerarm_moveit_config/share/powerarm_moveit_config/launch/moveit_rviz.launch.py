@@ -1,0 +1,1 @@
+/home/bobhu/src/powerArm/powerarm_ws_gazebo/src/powerarm_moveit_config/launch/moveit_rviz.launch.py
