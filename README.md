@@ -1,99 +1,96 @@
 # powerArm
 
-ROS and motion planning
+A ROS2-based robotic arm control and simulation project utilizing MoveIt2 for motion planning and control.
 
-## Environment
+## Environment Prerequisites
 
-ROS Distro: ROS2 humble  
-OS Version: Ubuntu 22.04  
-Moveit version: Moveit2 for ROS humble
+- **Operating System:** Ubuntu 22.04
+- **ROS Distribution:** ROS2 Humble
+- **Motion Planning:** MoveIt2 for ROS2 Humble
+- **Simulation:** Gazebo
 
 ## Project Structure
 
-```
-POWERARM/
-├── powerArm_control_ws/     # Control workspace
-│   └── .vscode/            # VS Code configuration
-│
-├── powerarm_ws/            # Main workspace
-│   ├── .vscode/           # VS Code configuration
-│   ├── build/             # Build directory
-│   ├── install/           # Install directory
-│   ├── log/              # Log files
-│   ├── src/              # Source code
-│   │   ├── bernoulli_points.txt
-│   │   ├── cmd.txt
-│   │   └── points.txt
-│   └── README.md
-│
-└── powerarm_ws_gazebo/    # Gazebo simulation workspace
-    ├── .vscode/          # VS Code configuration
-    ├── build/           # Build directory
-    ├── install/        # Install directory
-    ├── src/           # Source code
-    │   ├── bernoulli_points.txt
-    │   ├── cmd.txt
-    │   ├── my_send_goal.sh
-    │   ├── note.txt
-    │   └── points.txt
-    └── .gitignore
-```
+The project consists of three primary workspaces:
+
+1. **Main Workspace (powerarm_ws)**
+   - Core robot functionality and configurations
+   - Robot description and primary nodes
+
+2. **Gazebo Simulation Workspace (powerarm_ws_gazebo)**
+   - Simulation configurations
+   - Testing environments
+   - Visual tools and demonstrations
+
+3. **Control Workspace (powerArm_control_ws)**
+   - Hardware interface implementations
+   - Real robot control nodes
 
 ## Installation
 
-1. Create the workspaces:
-```bash
-mkdir -p powerArm_control_ws/src
-mkdir -p powerarm_ws/src
-mkdir -p powerarm_ws_gazebo/src
-```
+### 1. System Dependencies
 
-2. Clone this repository:
-```bash
-git clone <repository-url> .
-```
+First, install the required system dependencies:
 
-3. Install ROS2 dependencies:
 ```bash
+# Update package lists
 sudo apt update
+
+# Install ROS2 and core dependencies
 sudo apt install ros-humble-desktop-full
 sudo apt install ros-humble-moveit
-```
 
-4. Build the workspaces:
-```bash
+# Install additional required packages
+sudo apt install ros-humble-moveit-common
+sudo apt install ros-humble-graph-msgs
+sudo apt install ros-humble-visualization-msgs ros-humble-rviz-visual-tools
+### 2.build 
 # Build main workspace
-cd powerarm_ws
-colcon build
+cd ~/powerArm/powerarm_ws
+colcon build --symlink-install
+source install/setup.bash
 
 # Build control workspace
 cd ../powerArm_control_ws
-colcon build
+colcon build --symlink-install
+source install/setup.bash
 
-# Build Gazebo workspace
+# Build Gazebo simulation workspace
 cd ../powerarm_ws_gazebo
-colcon build
-```
-
+colcon build --symlink-install
+source install/setup.bash
 ## Usage
 
-1. Source ROS2 and workspace:
+### Setting Up the Environment
+
+Before using the robot, ensure proper environment setup:
+
 ```bash
+# Source ROS2 base installation
 source /opt/ros/humble/setup.bash
-source ~/powerarm_ws/install/setup.bash
-```
 
-2. For Gazebo simulation:
-```bash
-source ~/powerarm_ws_gazebo/install/setup.bash
-# Launch commands will be added here
-```
+# Source the workspaces based on your needs:
+# For simulation:
+source ~/powerArm/powerarm_ws/install/setup.bash
+source ~/powerArm/powerarm_ws_gazebo/install/setup.bash
 
-3. For real robot control:
-```bash
-source ~/powerArm_control_ws/install/setup.bash
-# Control commands will be added here
-```
+# For real robot control:
+source ~/powerArm/powerarm_ws/install/setup.bash
+source ~/powerArm/powerArm_control_ws/install/setup.bash
 
 
+## trouble shooting
+# Clean build artifacts
+rm -rf build/ install/ log/
 
+# Rebuild with clean cache
+colcon build --symlink-install --cmake-clean-cache
+
+#missing
+
+sudo apt update
+sudo apt install ros-humble-moveit-common
+sudo apt install ros-humble-graph-msgs
+Ensure all workspaces are sourced in the correct order
+Verify package dependencies are properly installed
+Check for CMake configuration errors in the build logs
