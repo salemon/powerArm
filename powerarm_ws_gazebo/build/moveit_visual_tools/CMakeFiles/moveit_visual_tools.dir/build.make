@@ -250,6 +250,7 @@ libmoveit_visual_tools.so: /opt/ros/humble/lib/libresource_retriever.so
 libmoveit_visual_tools.so: /usr/lib/x86_64-linux-gnu/libcurl.so
 libmoveit_visual_tools.so: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
 libmoveit_visual_tools.so: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+libmoveit_visual_tools.so: /usr/lib/x86_64-linux-gnu/libfreeimage.so
 libmoveit_visual_tools.so: /usr/lib/x86_64-linux-gnu/libfreetype.so
 libmoveit_visual_tools.so: /usr/lib/x86_64-linux-gnu/libz.so
 libmoveit_visual_tools.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so

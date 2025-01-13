@@ -211,6 +211,7 @@ moveit_visual_tools_demo: /opt/ros/humble/lib/libresource_retriever.so
 moveit_visual_tools_demo: /usr/lib/x86_64-linux-gnu/libcurl.so
 moveit_visual_tools_demo: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
 moveit_visual_tools_demo: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+moveit_visual_tools_demo: /usr/lib/x86_64-linux-gnu/libfreeimage.so
 moveit_visual_tools_demo: /usr/lib/x86_64-linux-gnu/libfreetype.so
 moveit_visual_tools_demo: /usr/lib/x86_64-linux-gnu/libz.so
 moveit_visual_tools_demo: /usr/lib/x86_64-linux-gnu/libOpenGL.so

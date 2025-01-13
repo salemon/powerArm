@@ -229,6 +229,7 @@ powerarm_control_bernoulli: /opt/ros/humble/lib/libresource_retriever.so
 powerarm_control_bernoulli: /usr/lib/x86_64-linux-gnu/libcurl.so
 powerarm_control_bernoulli: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
 powerarm_control_bernoulli: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+powerarm_control_bernoulli: /usr/lib/x86_64-linux-gnu/libfreeimage.so
 powerarm_control_bernoulli: /usr/lib/x86_64-linux-gnu/libfreetype.so
 powerarm_control_bernoulli: /usr/lib/x86_64-linux-gnu/libz.so
 powerarm_control_bernoulli: /usr/lib/x86_64-linux-gnu/libOpenGL.so
