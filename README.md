@@ -79,6 +79,7 @@ Before operating the robot, configure your environment:
 ```bash
 # Source ROS2 base installation
 source /opt/ros/humble/setup.bash
+~/src/powerArm/powerarm_ws_gazebo$ source install/setup.bash
 
 # For simulation environment:
 source ~/src/powerArm/powerarm_ws_gazebo/install/local_setup.bash
@@ -93,11 +94,11 @@ source ~/powerArm/powerArm_control_ws/install/setup.bash
 Launch the robot in simulation mode with visualization:
 
 ```bash
-# Launch MoveIt with RViz visualization
-ros2 launch powerarm_moveit_config demo.launch.py
-
 # Launch Gazebo simulation (in a new terminal)
 ros2 launch powerarm_moveit_config gazebo.launch.py
+ros2 launch powerarm_moveit_config new_moveit_rviz.launch.py 
+
+
 ```
 
 ### Robot Control
