@@ -1,0 +1,23 @@
+digraph G {
+node [shape=box];
+"world" [label="world"];
+"base_link" [label="base_link"];
+"shoulder_link_1" [label="shoulder_link_1"];
+"shoulder_link_2" [label="shoulder_link_2"];
+"shoulder_link_3" [label="shoulder_link_3"];
+"elbow_link" [label="elbow_link"];
+"ee_link" [label="ee_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"world" -> "fixed" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"fixed" -> "base_link"
+"base_link" -> "shoulder_joint_1" [label="xyz: 0.69885 0 1.31619 \nrpy: 0 -0 0"]
+"shoulder_joint_1" -> "shoulder_link_1"
+"shoulder_link_1" -> "shoulder_joint_2" [label="xyz: 0 -0.14543 -0.2634 \nrpy: -1.5708 0 0"]
+"shoulder_joint_2" -> "shoulder_link_2"
+"shoulder_link_2" -> "shoulder_joint_3" [label="xyz: 0.19163 0.02842 0.17343 \nrpy: 0 1.5708 -0"]
+"shoulder_joint_3" -> "shoulder_link_3"
+"shoulder_link_3" -> "elbow_joint" [label="xyz: -0.0096516 0 0.09 \nrpy: 1.5708 -0 0"]
+"elbow_joint" -> "elbow_link"
+"elbow_link" -> "ee_joint" [label="xyz: 0.0105 0.344 0.0005 \nrpy: 0 -0 0"]
+"ee_joint" -> "ee_link"
+}
