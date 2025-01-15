@@ -92,7 +92,7 @@ def my_generate_moveit_rviz_launch(ld, moveit_config):
     ld.add_action(
         DeclareLaunchArgument(
             "rviz_config",
-            default_value=str(moveit_config.package_path / "config/moveit.rviz"),
+            default_value=str(moveit_config.package_path /"config/moveit.rviz"),
         )
     )
 

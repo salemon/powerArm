@@ -98,21 +98,46 @@ def generate_launch_description():
         output='screen')
     
     # Add Controller Manager
-    controller_manager_node = Node(
-        package='controller_manager',
-        executable='ros2_control_node',
-        parameters=[{'robot_description': urdf_model_path},
-                   os.path.join(pkg_share, 'config', 'ros2_controllers.yaml')],
-        output='screen'
-    )
+    # controller_manager_node = Node(
+    #     package='controller_manager',
+    #     executable='ros2_control_node',
+    #     parameters=[{'robot_description': urdf_model_path},
+    #                os.path.join(pkg_share, 'config', 'ros2_controllers.yaml')],
+    #     output='screen'
+    # )
+    with open(urdf_model_path, 'r') as file:
+        robot_description = file.read()
 
+    # Properly configure the robot_state_publisher
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        arguments=[urdf_model_path],
-        parameters=[{'use_sim_time': True}],
+        parameters=[{
+            'robot_description': robot_description,
+            'use_sim_time': True
+        }],
         output='screen'
     )
+    # In your launch file
+    print("Available hardware plugins:")
+    os.system("ros2 component types | grep SystemInterface")
+    controller_manager_node = Node(
+        package='controller_manager',
+        executable='ros2_control_node',
+        parameters=[
+            {'robot_description': robot_description},
+            os.path.join(pkg_share, 'config', 'ros2_controllers.yaml'),
+            {'use_sim_time': True}
+        ],
+        output='screen'
+    )
+    # node_robot_state_publisher = Node(
+    #     package='robot_state_publisher',
+    #     executable='robot_state_publisher',
+    #     arguments=[urdf_model_path],
+    #     parameters=[{'use_sim_time': True}],
+    #     output='screen'
+    # )
 
     load_joint_state_controller = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
