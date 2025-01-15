@@ -81,8 +81,7 @@ Before operating the robot, configure your environment:
 source /opt/ros/humble/setup.bash
 
 # For simulation environment:
-source ~/powerArm/powerarm_ws/install/setup.bash
-source ~/powerArm/powerarm_ws_gazebo/install/setup.bash
+source ~/src/powerArm/powerarm_ws_gazebo/install/local_setup.bash
 
 # For real robot control:
 source ~/powerArm/powerarm_ws/install/setup.bash
