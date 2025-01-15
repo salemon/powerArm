@@ -409,8 +409,8 @@
 
   <gazebo>
     <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-      <parameters>/home/wenda/powerarm_ws/src/powerarm_moveit_config/config/ros2_controllers.yaml</parameters>
-      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>$(find powerarm_urdf)/config/ros2_controllers.yaml</parameters>
+      <!-- <robot_param_node>robot_state_publisher</robot_param_node> -->
     </plugin>
   </gazebo>
 </robot>
