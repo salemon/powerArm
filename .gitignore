@@ -1,1 +1,25 @@
+# ROS build files
+build/
+devel/
+install/
+
+# Log files
 log/
+
+# ROS package specific
+*.bag
+*.log
+*.pyc
+*.swp
+
+# IDE specific
+.vscode/
+.idea/
+*.iml
+
+# System specific
+.DS_Store
+Thumbs.db
+
+# Python cache files
+__pycache__/
